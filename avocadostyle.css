@@ -536,6 +536,8 @@ nav a:hover {
     box-shadow: 0 0 1em gray;
 }
 
+
+
 .team_member_name {
     text-align: center;
 }
@@ -636,4 +638,5 @@ nav a:hover {
     margin: 2em auto;
     display: flex;
     justify-content: center;
+    border:2px solid;
 }
