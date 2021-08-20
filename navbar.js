@@ -10,7 +10,7 @@ class pageHeader extends HTMLElement {
                 <li><a href="#team_member_container" class="menubar__links" id="team_page">team</a></li>
                 <li><a href="#courses_container" class="menubar__links" id="courses_page">courses</a></li>
                 <li><a href="#projects" class="menubar__links" id="projects_page">projects</a></li>
-                <li><a href="#signup_container" class="menubar__links" id ="signup_button" target="_blank">Sign Up</a></li>
+                <li><a href="signup.html" class="menubar__links" id ="signup_button" target="_blank">Sign Up</a></li>
             </ul>
         </nav>
         <label for='nav-toggle' class='nav-toggle-label' id="mobile-menu">
