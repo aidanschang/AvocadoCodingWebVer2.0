@@ -2,7 +2,7 @@ class pageHeader extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
         <header id="navbar_header">
-        <h1 class='logo'><a href="#hero_container" id="navbar__logo">Avocado Coding Class</a></h1>
+        <h1 class='logo'><a href="index.html" id="navbar__logo">Avocado Coding Class</a></h1>
         <input type="checkbox" id='nav-toggle' class="nav-toggle">
         <nav>
             <ul class="navbar__menu">

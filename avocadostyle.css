@@ -587,13 +587,14 @@ nav a:hover {
 
 
 #signup_container {
-    max-width: 70%;
+    max-width: 90%;
     padding-top: 5em;
     margin: 0 auto;
 }
 
 #form {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -622,8 +623,9 @@ nav a:hover {
 
 
 .form_control {
-    width: 33%;
-    min-width: 200px;
+    padding:1em;
+    margin: 1em 1em;
+    min-width: 550px;
     border: 1px solid;
     display:flex;
     flex-direction: column;
@@ -638,4 +640,10 @@ nav a:hover {
     margin: 2em auto;
     display: flex;
     justify-content: center;
+}
+
+#primary_contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
