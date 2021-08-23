@@ -1,4 +1,4 @@
-
+/*===GLOBAL===*/
 :root {
     --background: rgba(166, 204, 142);
     --headerfontcolor: #26272A;
@@ -25,18 +25,15 @@ body {
     background-size:auto;
 }*/
 
-/* navigation bar styles */
 
+/*===NAV BAR===*/
 #navbar_header {
     background-color: #E9EEF1;
     text-align: center;
     position: fixed;
     z-index:999;
     width: 100%;
-    
 }
-
-
 
 .logo {
     font-family: 'Palette Mosaic', cursive;
@@ -82,7 +79,7 @@ nav a {
 }
 
 #signup_button {
-    background-color: var(--headerfontcolor);
+    border: 2px solid;
     color: white;
     font-weight: bolder;
     padding: 5px;
@@ -101,7 +98,7 @@ nav a:hover {
     transition: opacity 250ms ease-in-out 250ms;
 }
 
-/* nav bar toggle */
+/*===nav bar toggle===*/
 .nav-toggle {
     display: none;
 }
@@ -126,10 +123,6 @@ nav a:hover {
     border-radius: 2px;
     position: relative;
 }
-
-.highlight {
-    border-bottom: 4px solid rgb(132, 0, 255);
-  }
 
 .nav-toggle-label span::before,
 .nav-toggle-label span::after {
@@ -191,7 +184,6 @@ nav a:hover {
         right: 0;
         transform: scale(0,1);
         transition: transform ease-in-out 250ms;
-
     }
 
     nav a:hover::before {
@@ -201,22 +193,19 @@ nav a:hover {
 
 
 /*===== Hero =====*/
+
 #hero_container {
-    width:96%;
+    width:97%;
     padding-top: 5em;
     margin: 0 auto;
-    display:flex;
+    display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
 }
 
 #hero_box {
-    padding: 8em 2em;
+    padding: 8em;
     height: 1000px;
-    display: block;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     background-image: url("IMG_4801.jpg");
     background-position: center;
     background-size:cover;
@@ -231,10 +220,21 @@ nav a:hover {
 
 #author {
     text-align: right;
-    margin-top: 2em;
+   
     font-size: 3rem;
 }
 
+#hero_btn_container {
+    margin-top: 1em;
+}
+#hero_container a {
+    text-decoration: none;
+    border: 2px solid;
+    color: white;
+    padding:1rem;
+    font-weight: bold;
+    
+}
 /*===== About =====*/
 
 #about_container {
@@ -242,6 +242,7 @@ nav a:hover {
     padding: 2em;
     background-color: var(--background);
     width: 90%;
+    max-width: 70%;
     position: absolute;
     right: 0;
     left: 0;
@@ -258,24 +259,19 @@ nav a:hover {
 }
 
 #about_pic {
-    width: 100%;
+    width: 550px;
     
 }
 
-#about_section h1 {
-    font-size: 5rem;
-    font-weight: bolder;
-    text-align: center;
-}
 
 #about_section h2 {
     font-size: 2rem;
-    font-weight: bolder;
+    text-align: center;
 }
 
 #about_section p {
-    font-size: 1.3rem;
-    font-weight: bolder;
+    font-size: 1rem;
+    
     text-align: center;
     margin-bottom: 0.3em;
 }
