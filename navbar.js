@@ -7,8 +7,8 @@ class pageHeader extends HTMLElement {
         <nav>
             <ul class="navbar__menu">
                 <li><a href="#about_container" class="menubar__links" id="about_page">about</a></li>
-                <li><a href="#team_member_container" class="menubar__links" id="team_page">team</a></li>
-                <li><a href="#courses_container" class="menubar__links" id="courses_page">courses</a></li>
+                <li><a href="teams.html" class="menubar__links" id="team_page">team</a></li>
+                <li><a href="courses.html" class="menubar__links" id="courses_page">courses</a></li>
                 <li><a href="#projects" class="menubar__links" id="projects_page">projects</a></li>
                 <li><a href="signup.html" class="menubar__links" id ="signup_button" target="_blank">Sign Up</a></li>
             </ul>
