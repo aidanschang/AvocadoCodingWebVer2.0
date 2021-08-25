@@ -454,6 +454,12 @@ body {
     margin: 0em 0em 3em 0.5em;
 }
 
+.course_checkbox, .gender_radio_btn {
+    font-size: 1.2rem;
+    width: 100%;
+    margin: 0 0 1em 0;
+    
+}
 
 .form_control .error-message {
     display:none;
