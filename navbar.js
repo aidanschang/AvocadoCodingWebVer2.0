@@ -4,7 +4,7 @@ class pageHeader extends HTMLElement {
         <header id="navbar_header">
         <h1 class='logo'><a href="index.html" id="navbar__logo">Avocado Coding Class</a></h1>
         <input type="checkbox" id='nav-toggle' class="nav-toggle">
-        <nav>
+        <nav id="menu_nav">
             <ul class="navbar__menu">
                 <li><a href="#about_container" class="menubar__links" id="about_page">about</a></li>
                 <li><a href="teams.html" class="menubar__links" id="team_page">team</a></li>
@@ -14,7 +14,9 @@ class pageHeader extends HTMLElement {
             </ul>
         </nav>
         <label for='nav-toggle' class='nav-toggle-label' id="mobile-menu">
+        <div id="nav-btn">    
             <span></span>
+        </div>
         </label>
     </header>
         `

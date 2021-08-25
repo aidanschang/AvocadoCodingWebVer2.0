@@ -4,7 +4,7 @@
     --headerfontcolor: #26272A;
     --fontcolor: rgb(195, 211, 86);
     font-size: 16px;
-    /*background-color: rgb(240, 228, 151);*/
+    background-color: #E9EEF1;
   }
   
 *, *::before, *::after {
@@ -40,30 +40,30 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-nav {
+#menu_nav  {
     position: absolute;
     text-align: right;
     top: 100%;
     right: 0;
-    background: var(--background);
+    background: #e9eef1;
     width: 100%;
     transform: scale(1, 0);
     transform-origin: top;
     transition: transform 400ms ease-in-out;
 }
 
-nav ul {
+#menu_nav  ul {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-nav li {
+#menu_nav  li {
     margin-bottom: 1em;
     margin-right: 1em;
 }
 
-nav a {
+#menu_nav  a {
     color: var(--headerfontcolor);
     font-weight: bold;
     text-decoration: none;
@@ -85,15 +85,15 @@ nav a {
     padding: 5px;
 }
 
-nav a:hover {
+#menu_nav  a:hover {
     color: #000;
 }
 
-.nav-toggle:checked ~ nav {
+.nav-toggle:checked ~ #menu_nav {
     transform: scale(1, 1);
 }
 
-.nav-toggle:checked ~ nav a {
+.nav-toggle:checked ~ #menu_nav a {
     opacity: 1;
     transition: opacity 250ms ease-in-out 250ms;
 }
@@ -138,6 +138,9 @@ nav a:hover {
     top: 7px;
 }
 
+#nav-btn:hover {
+    cursor: pointer;
+}
 @media screen and (min-width: 800px) {
     .nav-toggle-label {
         display: none;
@@ -151,29 +154,29 @@ nav a:hover {
     .logo {
         margin-left: 1em;
     }
-    nav {
+    #menu_nav {
         all:unset;
         display:flex;
         margin-right: 3em;
         align-items: center;
     }
 
-    nav ul {
+    #menu_nav ul {
         display:flex;
         align-items: center;
         
     }
-    nav li {
+    #menu_nav li {
         margin-left: 15px;
         margin-bottom: 0;
     }
 
-    nav a {
+    #menu_nav a {
         opacity: 1;
         position: relative;
     }
 
-    nav a::before {
+    #menu_nav a::before {
         content: '';
         display:block;
         height: 3px;
@@ -186,7 +189,7 @@ nav a:hover {
         transition: transform ease-in-out 250ms;
     }
 
-    nav a:hover::before {
+    #menu_nav a:hover::before {
         transform: scale(1,1);
     }
 }
@@ -331,7 +334,7 @@ nav a:hover {
 
 #courses_container {
     width: 100%;
-    padding: 10em;
+    padding-top: 10em;
     
 }
 
@@ -371,11 +374,6 @@ nav a:hover {
     margin: 0 auto;
 }
 
-#form {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
 
 #signup_container h1 {
     text-align: center;
@@ -400,15 +398,62 @@ nav a:hover {
     margin: 2em 2em 1em;
 }
 
+#form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 
 .form_control {
+    width:30%;
     padding:1em;
-    margin: 1em 1em;
+    margin-top: 1em;
     min-width: 550px;
     border: 1px solid;
     display:flex;
     flex-direction: column;
 }
+
+
+.fillout-input {
+    font-size: 1.2rem;
+    width: 100%;
+    margin: 0 0 1em 0;
+    background-color: transparent;
+    border-style: none;
+    border-bottom: 1px solid;
+}
+
+#fullname, #student_fullname {
+    display: flex;
+    
+}
+
+#firstname, #student_firstname {
+    width: 50%;
+    margin: 1em 0.5em 3em 0;
+}
+
+#lastname, #student_lastname {
+    width: 50%;
+    margin: 1em 0 3em 0.5em;
+}
+
+#city {
+    width: 45%;
+    margin: 0em 0.5em 3em 0em;
+}
+
+#state {
+    width: 25%;
+    margin: 0em 0.5em 3em 0.5em;
+}
+
+#zip {
+    width: 20%;
+    margin: 0em 0em 3em 0.5em;
+}
+
 
 .form_control .error-message {
     display:none;
@@ -424,5 +469,30 @@ nav a:hover {
 #primary_contact {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: left;
+}
+
+/*=== FOOTER ===*/
+
+#avocado_coding_footer {
+    width:100%;
+    padding-top: 600px;
+    
+}
+
+#footer_nav  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#footer_nav  li {
+    margin-bottom: 1em;
+    margin-right: 1em;
+    text-align: center;
+}
+
+#footer_nav a {
+    text-decoration: none;
+    
 }

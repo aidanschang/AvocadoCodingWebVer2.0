@@ -79,27 +79,26 @@
                 </div>
             </div>
         </section>
-
+        
+        <!--Sign Up Starts Here-->
         <h1 >Sign up</h1>
 
         <section id="signup_form" class="signup_sections">
             
-            <form class="form" id="form" action="" method="POST">
-                
+            <form id="form" action="" method="POST">
+                <!--Primary Contact-->
                 <div class="form_control" id="primary_contact">
                     <h2 class="steps">Primary Contact</h2>
                     
                     <div id="fullname">
-                        <h4>First Name</h4>
-                        
                         <input class='fillout-input' type="text" placeholder= 'First Name' id='firstname' name="firstname">
+                        <p class='error-message'>Error message</p>
+
                         <input class='fillout-input' type="text" placeholder= 'Last Name' id='lastname' name="lastname">
                         <p class='error-message'>Error message</p>
                     </div>
 
                     <div id="address">
-                        <h4>Street Address</h4>
-                        
                         <input class='fillout-input' placeholder= 'Stress Address Line 1' id='streetaddress1' name="streetaddress1"> 
                         <p class='error-message'>Error message</p>
                         <input class='fillout-input' placeholder= 'Stress Address Line 2' id='streetaddress2' name="streetaddress2"> 
@@ -115,32 +114,30 @@
                     </div>
 
                     <div id="email">
-                        <h4>Email</h4>
-                        
                         <input class='fillout-input' type="email" placeholder= 'Email' id='email' name="email"> 
                         <p class='error-message'>Error message</p>
                     </div>
 
                     <div id="phonenumber">
-                        <h4>Phone Number</h4>
-                        
                         <input class='fillout-input' type="number" placeholder= 'Phone Number' id='phonenumber' name="phonenumber"> 
                         <p class='error-message'>Error message</p>
                     </div>
                     
                 </div>
     
-                
-
+                <!--Student Information-->
                 <div class="form_control" id="student_info">
                     <h2 class="steps">Student Infomation</h2>
-                    <label for="firstname" class='fillout_label'>Student First Name</label>
-                    <input class='fillout-input' type="text" placeholder= 'Student First Name' name="firstname">
-                    <p class='error-message'>Error message</p>
                     
-                    <label for="lastname" class='fillout_label'>Student Last Name</label>
-                    <input class='fillout-input' type="text" placeholder= 'Student Last Name' name="lastname">
-                    <p class='error-message'>Error message</p>
+                    <div id="student_fullname">
+                        <input class='fillout-input' type="text" placeholder= 'Student First Name' id="studnet_firstname" name="firstname">
+                        <p class='error-message'>Error message</p>
+
+                        <input class='fillout-input' type="text" placeholder= 'Student Last Name' id="studnet_lastname" name="lastname">
+                        <p class='error-message'>Error message</p>
+                    </div>
+                    
+                    
                     
                     <label for="birthday" class='fillout_label'>Student Date of Birth</label>
                     <input class='fillout-input' type="date" placeholder= 'Student Date of Birth' name="birthday"> 
@@ -156,15 +153,15 @@
                     <p>
                         Pick your classes:
                         <br/>
-                        <input class='radio-input' type="checkbox" name="class" value="scratch1"/>
+                        <input class='checkbox-input' type="checkbox" name="class" value="scratch1"/>
                         Scratch I Sat 11AM PST (Start Date: 9/4)
-                        <input class='radio-input' type="checkbox" name="class" value="scratchii_thu"/>
+                        <input class='checkbox-input' type="checkbox" name="class" value="scratchii_thu"/>
                         Scratch II Thu 5PM PST (Start Date: 8/12)
-                        <input class='radio-input' type="checkbox" name="class" value="scratchii_sat"/>
+                        <input class='checkbox-input' type="checkbox" name="class" value="scratchii_sat"/>
                         Scratch II Sat 2PM PST (Start Date: 8/14
-                        <input class='radio-input' type="checkbox" name="class" value="pythoni"/>
+                        <input class='checkbox-input' type="checkbox" name="class" value="pythoni"/>
                         Python I Sat 10AM PST (Start Date: 8/14)
-                        <input class='radio-input' type="checkbox" name="class" value="robloxstudio"/>
+                        <input class='checkbox-input' type="checkbox" name="class" value="robloxstudio"/>
                         Roblox Studio I
                     </p>
                     <p class='error-message'>Error message</p>
