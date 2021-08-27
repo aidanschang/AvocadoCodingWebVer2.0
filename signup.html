@@ -124,13 +124,13 @@
     
                 <!--Student Information-->
                 <div class="form_control" id="student_info">
-                    <h2 class="steps">Student Infomation</h2>
+                    <h2>Student Infomation</h2>
                     
                     <div id="student_fullname">
-                        <input class='fillout_input' type="text" placeholder= 'Student First Name' id="studnet_firstname" name="firstname">
+                        <input class='fillout_input' type="text" placeholder= 'Student First Name' id="student_firstname" name="firstname">
                         <p class='error-message'>Error message</p>
 
-                        <input class='fillout_input' type="text" placeholder= 'Student Last Name' id="studnet_lastname" name="lastname">
+                        <input class='fillout_input' type="text" placeholder= 'Student Last Name' id="student_lastname" name="lastname">
                         <p class='error-message'>Error message</p>
                     </div>
                     
@@ -142,7 +142,7 @@
 
                     <div id="gender">
                         <h4>Student Gender:</h4>
-                        <div class="gender_radio_btn"><input class = 'radio_btn_input' type="radio" name = "gender" value = "male"/>
+                        <div class="gender_radio_btn"><input class ='radio_btn_input' type="radio" name = "gender" value = "male"/>
                             Male</div>
                         <div class="gender_radio_btn"><input class ='radio_btn_input' type="radio" name = "gender" value = "female"/>
                             Female</div>
@@ -175,9 +175,9 @@
                         <p>Parents can join our pre-talk session to decide whether to participate in our class. Once starting, the tuition fee is nonrefundable.</p> 
                         
                         <h4>I agree to pay the full tuition fee before the first class: </h4>
-                        <div class="agreement_radio_btn"><input type="radio" id = "male" name = "aggrement" value = "agree">
+                        <div class="agreement_radio_btn"><input class ='radio_btn_input' type="radio" id = "male" name = "aggrement" value = "agree">
                             Agree</div>
-                        <div class="agreement_radio_btn"><input type="radio" id = "female" name = "aggrement" value = "disagree">
+                        <div class="agreement_radio_btn"><input class ='radio_btn_input' type="radio" id = "female" name = "aggrement" value = "disagree">
                             Disagree </div> 
                         <p class='error-message'>Error message</p>
                     </div>
@@ -185,15 +185,15 @@
                     <div id="find_us">
                         <h4>How did you find us:</h4>
                         
-                        <div class="find_us"><input class='radio-input' type="checkbox" name="traffic_source" value="friend"/>
+                        <div class="find_us"><input class='checkbox_input' type="checkbox" name="traffic_source" value="friend"/>
                         Friend</div>
-                        <div class="find_us"><input class='radio-input' type="checkbox" name="traffic_source" value="whatsapp"/>
+                        <div class="find_us"><input class='checkbox_input' type="checkbox" name="traffic_source" value="whatsapp"/>
                         WhatsApp</div>
-                        <div class="find_us"><input class='radio-input' type="checkbox" name="traffic_source" value="wechat"/>
+                        <div class="find_us"><input class='checkbox_input' type="checkbox" name="traffic_source" value="wechat"/>
                         Wechat</div>
-                        <div id="find_us_other">
+                        <div id="find_us_other_container">
                             Other:
-                            <div class="find_us"><input class='radio-input' type="text" name="traffic_source" placeholder="Internet"/>
+                            <div class="find_us"><input class='radio-input' id="find_us_other_input" type="text" name="traffic_source" placeholder="Internet"/>
                             </div> 
                         </div>
                          

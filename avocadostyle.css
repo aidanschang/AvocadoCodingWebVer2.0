@@ -422,7 +422,7 @@ body {
 
 #primary_contact, #student_info, #program_registration {
     display: flex;
-    justify-content: center;
+    
     align-items: left;
 }
 
@@ -433,6 +433,7 @@ body {
     background-color: transparent;
     border-style: none;
     border-bottom: 1px solid;
+    outline: none;
 }
 
 #fullname, #student_fullname {
@@ -442,14 +443,18 @@ body {
 
 #firstname, #student_firstname {
     width: 50%;
-    margin: 1em 0.5em 3em 0;
+    margin: 0.5em 0.5em 1.5em 0;
 }
 
 #lastname, #student_lastname {
     width: 50%;
-    margin: 1em 0 3em 0.5em;
+    margin: 0.5em 0 1.5em 0.5em;
 }
 
+#signup_form h4 {
+    margin-top:0;
+    margin-bottom: .5rem;
+}
 #city {
     width: 45%;
     margin: 0em 0.5em 3em 0em;
@@ -465,14 +470,34 @@ body {
     margin: 0em 0em 3em 0.5em;
 }
 
-.course_checkbox, .gender_radio_btn, .agreement_radio_btn {
+.course_checkbox, .gender_radio_btn, .agreement_radio_btn, .find_us {
     font-size: 1.2rem;
     width: 100%;
-    margin: 0 0 1em 0;
+    margin: 0 0 0.5em 0;
+}
+
+#find_us {
+    display:flex;
+    flex-direction: column;
 }
 
 .agreement_radio_btn, #find_us_other {
     display: flex;
+}
+
+#find_us_other_container{
+    display:flex;
+}
+
+#find_us_other_input{
+    margin-left: 1em;
+    font-size: 1.2rem;
+    width: 100%;
+    margin: 0 0 1em 0;
+    background-color: transparent;
+    border-style: none;
+    border-bottom: 1px solid;
+    outline: none;
 }
 
 #submit {
@@ -483,11 +508,6 @@ body {
     display: flex;
     justify-content: center;
 }
-
-
-
-
-
 
 
 /*=== FOOTER ===*/
