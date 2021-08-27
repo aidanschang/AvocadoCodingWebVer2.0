@@ -91,35 +91,32 @@
                     <h2 class="steps">Primary Contact</h2>
                     
                     <div id="fullname">
-                        <input class='fillout-input' type="text" placeholder= 'First Name' id='firstname' name="firstname">
+                        <input class='fillout_input' type="text" placeholder= 'First Name' id='firstname' name="firstname">
                         <p class='error-message'>Error message</p>
 
-                        <input class='fillout-input' type="text" placeholder= 'Last Name' id='lastname' name="lastname">
+                        <input class='fillout_input' type="text" placeholder= 'Last Name' id='lastname' name="lastname">
                         <p class='error-message'>Error message</p>
                     </div>
 
                     <div id="address">
-                        <input class='fillout-input' placeholder= 'Stress Address Line 1' id='streetaddress1' name="streetaddress1"> 
+                        <input class='fillout_input' placeholder= 'Stress Address Line 1' id='streetaddress1' name="streetaddress1"> 
                         <p class='error-message'>Error message</p>
-                        <input class='fillout-input' placeholder= 'Stress Address Line 2' id='streetaddress2' name="streetaddress2"> 
-
-                        <input class='fillout-input' id='city' placeholder= 'City' name="city"> 
+                        <input class='fillout_input' placeholder= 'Stress Address Line 2' id='streetaddress2' name="streetaddress2"> 
+                        <input class='fillout_input' id='city' placeholder= 'City' name="city"> 
                         <p class='error-message'>Error message</p>
-                        
-                        <input class='fillout-input' id='state' placeholder= 'State' name="state"> 
+                        <input class='fillout_input' id='state' placeholder= 'State' name="state"> 
                         <p class='error-message'>Error message</p>
-                        
-                        <input class='fillout-input' id='zip' placeholder= 'Zip Code' name="zip"> 
+                        <input class='fillout_input' id='zip' placeholder= 'Zip Code' name="zip"> 
                         <p class='error-message'>Error message</p>
                     </div>
 
                     <div id="email">
-                        <input class='fillout-input' type="email" placeholder= 'Email' id='email' name="email"> 
+                        <input class='fillout_input' type="email" placeholder= 'Email' id='email' name="email"> 
                         <p class='error-message'>Error message</p>
                     </div>
 
                     <div id="phonenumber">
-                        <input class='fillout-input' type="number" placeholder= 'Phone Number' id='phonenumber' name="phonenumber"> 
+                        <input class='fillout_input' type="number" placeholder= 'Phone Number' id='phonenumber' name="phonenumber"> 
                         <p class='error-message'>Error message</p>
                     </div>
                     
@@ -130,30 +127,31 @@
                     <h2 class="steps">Student Infomation</h2>
                     
                     <div id="student_fullname">
-                        <input class='fillout-input' type="text" placeholder= 'Student First Name' id="studnet_firstname" name="firstname">
+                        <input class='fillout_input' type="text" placeholder= 'Student First Name' id="studnet_firstname" name="firstname">
                         <p class='error-message'>Error message</p>
 
-                        <input class='fillout-input' type="text" placeholder= 'Student Last Name' id="studnet_lastname" name="lastname">
+                        <input class='fillout_input' type="text" placeholder= 'Student Last Name' id="studnet_lastname" name="lastname">
+                        <p class='error-message'>Error message</p>
+                    </div>
+                    
+                    <div id="dob">
+                        <h4>Student Date of Birth:</h4>
+                        <input class='fillout_input' id="dob_input" type="date" placeholder= 'Student Date of Birth' name="birthday"> 
+                        <p class='error-message'>Error message</p>
+                    </div>
+
+                    <div id="gender">
+                        <h4>Student Gender:</h4>
+                        <div class="gender_radio_btn"><input class = 'radio_btn_input' type="radio" name = "gender" value = "male"/>
+                            Male</div>
+                        <div class="gender_radio_btn"><input class ='radio_btn_input' type="radio" name = "gender" value = "female"/>
+                            Female</div>
                         <p class='error-message'>Error message</p>
                     </div>
                     
                     
-                    <label for="birthday" class='fillout_label'>Student Date of Birth</label>
-                    <input class='fillout-input' type="date" placeholder= 'Student Date of Birth' name="birthday"> 
-                    <p class='error-message'>Error message</p>
-                    
-                    <p>Student Gender:
-                        <br/>
-                        <div class="gender_radio_btn"><input class = 'radio_btn_input' type="radio" name = "gender" value = "male"/> Male</div>
-                        
-                        <div class="gender_radio_btn"><input class ='radio_btn_input' type="radio" name = "gender" value = "female"/> Female</div>
-                        </p>
-                    <p class='error-message'>Error message</p>
-                    
-                    <p>
-                        Pick your classes:
-                        <br/>
-
+                    <div id="pick_classes">
+                        <h4>Pick your classes:</h4>
                         <div class="course_checkbox"><input class='checkbox_input' type="checkbox" name="class" value="scratch1"/>
                         Scratch I Sat 11AM PST (Start Date: 9/4)</div>
                         <div class="course_checkbox"><input class='checkbox_input' type="checkbox" name="class" value="scratchii_thu"/>
@@ -164,47 +162,50 @@
                         Python I Sat 10AM PST (Start Date: 8/14)</div>
                         <div class="course_checkbox"><input class='checkbox_input' type="checkbox" name="class" value="robloxstudio"/>
                         Roblox Studio I</div>
-                    </p>
-                    <p class='error-message'>Error message</p>
+                        <p class='error-message'>Error message</p>
+                    </div>
+                    
                 </div>
     
                 <div class="form_control" id="program_registration">
                     <h2>Policy Agreement</h2>
                     
-                    <p>
-                        <b>The Coding Class Policy-<br> Parents can join our pre-talk session to decide whether to participate in our class. Once starting, the tuition fee is nonrefundable;- I agree to pay the full tuition fee before the first class. 
-                        </b>
-                        <br/>
-                        <input class = 'fillout-input' type="radio" id = "male" name = "aggrement" value = "agree">
-                        Agree
-                        <input class ='fillout-input' type="radio" id = "female" name = "aggrement" value = "disagree">
-                        Disagree  
-                    </p>
-                    <p class='error-message'>Error message</p>
-
-                    <p>How did you find us:
+                    <div id="class_policy">
+                        <h4>The Coding Class Policy:</h4>
+                        <p>Parents can join our pre-talk session to decide whether to participate in our class. Once starting, the tuition fee is nonrefundable.</p> 
+                        
+                        <h4>I agree to pay the full tuition fee before the first class: </h4>
+                        <div class="agreement_radio_btn"><input type="radio" id = "male" name = "aggrement" value = "agree">
+                            Agree</div>
+                        <div class="agreement_radio_btn"><input type="radio" id = "female" name = "aggrement" value = "disagree">
+                            Disagree </div> 
+                        <p class='error-message'>Error message</p>
+                    </div>
                     
-                        <input class='radio-input' type="checkbox" name="traffic_source" value="friend"/>
-                        Friend
+                    <div id="find_us">
+                        <h4>How did you find us:</h4>
                         
-                        <input class='radio-input' type="checkbox" name="traffic_source" value="whatsapp"/>
-                        WhatsApp
-                        
-                        <input class='radio-input' type="checkbox" name="traffic_source" value="wechat"/>
-                        Wechat
-                        <br>
-
-                        Other
-                        <input class='radio-input' type="text" name="traffic_source" placeholder="Internet"/>  
-                    </p>
+                        <div class="find_us"><input class='radio-input' type="checkbox" name="traffic_source" value="friend"/>
+                        Friend</div>
+                        <div class="find_us"><input class='radio-input' type="checkbox" name="traffic_source" value="whatsapp"/>
+                        WhatsApp</div>
+                        <div class="find_us"><input class='radio-input' type="checkbox" name="traffic_source" value="wechat"/>
+                        Wechat</div>
+                        <div id="find_us_other">
+                            Other:
+                            <div class="find_us"><input class='radio-input' type="text" name="traffic_source" placeholder="Internet"/>
+                            </div> 
+                        </div>
+                         
+                    </div>
                 </div>
             </form>
             <input id='submit' type="submit" name='submit' value="Submit">
         </section> 
     </div>
-    <script src= validator.js></script>
+    <!--<script src= validator.js></script>-->
     <script src= navbar.js></script>
-    <script src= app.js></script>
+    <script src= form_submission.js></script>
 </body>    
 </html>
 
