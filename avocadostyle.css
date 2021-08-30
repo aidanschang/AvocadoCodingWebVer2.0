@@ -28,7 +28,7 @@ body {
 
 /*===NAV BAR===*/
 #navbar_header {
-    background-color: #E9EEF1;
+    background-color: white;
     text-align: center;
     position: fixed;
     z-index:999;
@@ -98,6 +98,10 @@ body {
     transition: opacity 250ms ease-in-out 250ms;
 }
 
+#signup_button {
+    white-space: nowrap;
+    background-color: white;
+}
 /*===nav bar toggle===*/
 .nav-toggle {
     display: none;
@@ -142,6 +146,10 @@ body {
     cursor: pointer;
 }
 @media screen and (min-width: 800px) {
+
+    #navbar_header {
+        background-color: #E9EEF1;
+    }
     .nav-toggle-label {
         display: none;
     }
@@ -198,15 +206,15 @@ body {
 /*===== Hero =====*/
 
 #hero_container {
-    width:97%;
-    padding-top: 5em;
+    width:100%;
+    padding: 5em 1em;
     margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#hero_box {
+#index_hero_box {
     padding: 8em;
     height: 1000px;
     background-image: url("IMG_4801.jpg");
@@ -215,6 +223,7 @@ body {
 }
 
 #quotation {
+    margin-top:0;
     font-size: 5rem;
     font-weight: bolder;
     color:white;
@@ -223,7 +232,6 @@ body {
 
 #author {
     text-align: right;
-   
     font-size: 3rem;
 }
 
@@ -239,7 +247,6 @@ body {
     
 }
 /*===== About =====*/
-
 #about_container {
     margin: -6em auto;
     padding: 2em;
@@ -248,8 +255,7 @@ body {
     max-width: 70%;
     position: absolute;
     right: 0;
-    left: 0;
-    
+    left: 0;  
 }
 
 #about_box {
@@ -263,9 +269,7 @@ body {
 
 #about_pic {
     width: 550px;
-    
 }
-
 
 #about_section h2 {
     font-size: 2rem;
@@ -274,7 +278,6 @@ body {
 
 #about_section p {
     font-size: 1rem;
-    
     text-align: center;
     margin-bottom: 0.3em;
 }
@@ -286,11 +289,55 @@ body {
 }
 
 /*===== Team =====*/
+#team_hero_container {
+    width:100%;
+    padding: 5em 1em;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#team_hero_box {
+    height: 500px;
+    width:100%;
+    padding: 5em;
+    background-image: url("IMG_4798.jpg");
+    background-position: center;
+    background-size:cover;
+    align-items: left;
+}
+
+#team_hero_header {
+    margin-top:0;
+    font-size: 5rem;
+    font-weight: bolder;
+    color:white;
+    text-shadow: 2px 2px 15px #26272a;
+    text-align: left;
+}
+
+#team_hero_content {
+    text-align: left;
+    font-size: 3rem;
+}
+
+#team_header {
+    font-size: 5rem;
+    font-weight: bolder;
+    color:white;
+    text-shadow: 2px 2px 15px #26272a;
+}
+
+#author {
+    text-align: right;
+   
+    font-size: 3rem;
+}
 
 #team_member_container {
     width: 100%;
-    
-    padding:10em;
+    padding: 10em 2em;
 }
 
 #team_member_container h1{
@@ -301,9 +348,7 @@ body {
 }
 #teachingteam_box {
     margin-bottom: 2em;
-    
     font-size: 1.5rem;
-    
 }
 
 .teammember_profiles {
@@ -366,9 +411,6 @@ body {
 }
 
 /*===== Sign Up =====*/
-#signup_form {
-    font-size: 1.2rem;
-}
 
 #signup_container {
     max-width: 90%;
@@ -400,21 +442,25 @@ body {
     margin: 2em 2em 1em;
 }
 
-.form_control .error-message {
-    display:none;
+#signup_form {
+    font-size: 1.2rem;
 }
 
-#form {
+#form_container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
+.form_control .error-message {
+    display:none;
+}
+
 .form_control {
-    width:30%;
+    width:100%;
+    
     padding:1em;
     margin-top: 1em;
-    min-width: 550px;
     border: 1px solid;
     display:flex;
     flex-direction: column;
@@ -422,7 +468,6 @@ body {
 
 #primary_contact, #student_info, #program_registration {
     display: flex;
-    
     align-items: left;
 }
 

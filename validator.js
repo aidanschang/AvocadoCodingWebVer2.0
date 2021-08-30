@@ -1,40 +1,56 @@
-let form = document.getElementById("form");
-let firstName = document.getElementById("firstName");
-let lastName = document.getElementById("lastName");
-let facilitator = document.getElementById("facilitator");
+let form = document.getElementById("form_container");
+let primary_firstName = document.getElementById("firstname");
+let primary_lastName = document.getElementById("lastname");
+let street_address = document.getElementById("streetaddress1");
+let city = document.getElementById("city");
+let state = document.getElementById("state");
+let zip = document.getElementById("zip");
+let email = document.getElementById("email");
+let phone_number = document.getElementById("phonenumber");
+
+/*--student info--*/
+let student_firstName = document.getElementById("student_firstname");
+let student_lastName = document.getElementById("student_lastname");
+let student_dob = document.getElementById("dob_input");
+let student_gender = document.getElementById("student_lastname");
+let student_lastName = document.getElementById("student_lastname");
+let gender = document.getElementsByName("gender")
+let course_selected = document.getElementsByName("class")
+
+
 
 document.getElementById("submit").addEventListener("click", (e) => {
    
-    const firstNameValue = firstName.value.trim();
-    const lastNameValue = lastName.value.trim();
+    const primary_firstNameValue = primary_firstName.value.trim();
+    const lastNameValue = primary_lastName.value.trim();
     const facilitatorValue = facilitator.value.trim();
     
-    if(firstNameValue ==='') {
-        setErrorFor(firstName, "Empty input");
+    if(primary_firstNameValue ==='') {
+        setErrorFor(primary_firstName, "Empty input");
         e.preventDefault();
     } else if (
-        firstNameValue.length < 2) {
-            setErrorFor(firstName, "First name is less than 2 characters");
+        primary_firstNameValue.length < 2) {
+            setErrorFor(primary_firstName, "First name is less than 2 characters");
             e.preventDefault();
-        } else if (!a_zA_Z(firstNameValue)) {
-            setErrorFor(firstName, "Only alphabetical characters allowed");
+        } else if (!a_zA_Z(primary_firstNameValue)) {
+            setErrorFor(primary_firstName, "Only alphabetical characters allowed");
             e.preventDefault();
         } else {
-            setSuccessFor(firstName);
+            setSuccessFor(primary_firstName);
         }
 
     if(lastNameValue ==='') {
-        setErrorFor(lastName, "Empty input");
+        setErrorFor(primary_lastName, "Empty input");
         e.preventDefault();
     } else if (
         lastNameValue.length < 2) {
-            setErrorFor(lastName, "Last name is less than 2 characters");
+            setErrorFor(primary_lastName, "Last name is less than 2 characters");
             e.preventDefault();
         } else if (!a_zA_Z(lastNameValue)) {
-            setErrorFor(lastName, "Only alphabetical characters allowed");
+            setErrorFor(primary_lastName, "Only alphabetical characters allowed");
             e.preventDefault();
         } else {
-            setSuccessFor(lastName);
+            setSuccessFor(primary_lastName);
         }
     
     if (facilitatorValue === '') {

@@ -3,7 +3,7 @@ const btn = document.getElementById('submit');
 btn.addEventListener('click', function(){
     // document.querySelectorAll( '#primary_contact .fillout-input')
 
-    // // document.querySelector('input[name="gender"]:checked').value;
+    var gender = document.querySelector('input[name="gender"]:checked').value;
     
     // //check box
     // var form = document.getElementById('student_info');
@@ -24,6 +24,7 @@ var url = "http://39.108.187.78:5814/home/studentInfoForm";
 xmlhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
         var myArr = JSON.parse(this.responseText);
+        console.log(myArr);
         myFunction(myArr);
     }
 };
