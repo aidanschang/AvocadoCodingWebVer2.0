@@ -3,7 +3,7 @@ const btn = document.getElementById('submit');
 btn.addEventListener('click', function(){
     // document.querySelectorAll( '#primary_contact .fillout-input')
 
-    var gender = document.querySelector('input[name="gender"]:checked').value;
+    //var gender = document.querySelector('input[name="gender"]:checked').value;
     
     // //check box
     // var form = document.getElementById('student_info');

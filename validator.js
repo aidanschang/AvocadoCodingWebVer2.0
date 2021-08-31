@@ -13,18 +13,26 @@ let student_firstName = document.getElementById("student_firstname");
 let student_lastName = document.getElementById("student_lastname");
 let student_dob = document.getElementById("dob_input");
 let student_gender = document.getElementById("student_lastname");
-let student_lastName = document.getElementById("student_lastname");
-let gender = document.getElementsByName("gender")
-let course_selected = document.getElementsByName("class")
+
 
 
 
 document.getElementById("submit").addEventListener("click", (e) => {
    
     const primary_firstNameValue = primary_firstName.value.trim();
-    const lastNameValue = primary_lastName.value.trim();
-    const facilitatorValue = facilitator.value.trim();
+    const primary_lastNameValue = primary_lastName.value.trim();
+    const streetValue = street_address.value.trim();
+    const cityValue = city.value.trim();
+    const stateValue = state.value.trim();
+    const zipValue = zip.value.trim();
     
+
+    /*student Info*/
+    const student_firstNameValue = student_firstName.value.trim();
+    const student_lastNameValue = student_lastName.value.trim();
+    const dobValue = student_dob.value.trim();
+    const genderValue = student_gender.value.trim();
+
     if(primary_firstNameValue ==='') {
         setErrorFor(primary_firstName, "Empty input");
         e.preventDefault();
@@ -39,28 +47,20 @@ document.getElementById("submit").addEventListener("click", (e) => {
             setSuccessFor(primary_firstName);
         }
 
-    if(lastNameValue ==='') {
+    if(primary_lastNameValue ==='') {
         setErrorFor(primary_lastName, "Empty input");
         e.preventDefault();
     } else if (
-        lastNameValue.length < 2) {
+        primary_lastNameValue.length < 2) {
             setErrorFor(primary_lastName, "Last name is less than 2 characters");
             e.preventDefault();
-        } else if (!a_zA_Z(lastNameValue)) {
+        } else if (!a_zA_Z(primary_lastNameValue)) {
             setErrorFor(primary_lastName, "Only alphabetical characters allowed");
             e.preventDefault();
         } else {
             setSuccessFor(primary_lastName);
         }
     
-    if (facilitatorValue === '') {
-        setErrorFor(facilitator, "Empty input");
-        e.preventDefault();
-        } else if (isfacilitatorinvalid(facilitatorValue)) {
-            setErrorFor(facilitator, "Facilitator name incorrect");
-            e.preventDefault();
-        } else {setSuccessFor(facilitator);
-        }
 
   });
 
