@@ -36,41 +36,45 @@ document.getElementById("submit").addEventListener("click", (e) => {
     if(primary_firstNameValue ==='') {
         setErrorFor(primary_firstName, "Empty input");
         e.preventDefault();
-    } else if (
-        primary_firstNameValue.length < 2) {
-            setErrorFor(primary_firstName, "First name is less than 2 characters");
-            e.preventDefault();
-        } else if (!a_zA_Z(primary_firstNameValue)) {
-            setErrorFor(primary_firstName, "Only alphabetical characters allowed");
-            e.preventDefault();
-        } else {
+    } else {
             setSuccessFor(primary_firstName);
         }
 
     if(primary_lastNameValue ==='') {
         setErrorFor(primary_lastName, "Empty input");
         e.preventDefault();
-    } else if (
-        primary_lastNameValue.length < 2) {
-            setErrorFor(primary_lastName, "Last name is less than 2 characters");
-            e.preventDefault();
-        } else if (!a_zA_Z(primary_lastNameValue)) {
-            setErrorFor(primary_lastName, "Only alphabetical characters allowed");
-            e.preventDefault();
-        } else {
+    } else {
             setSuccessFor(primary_lastName);
         }
     
+    if(streetValue ==='') {
+        setErrorFor(street_address, "Empty input");
+        e.preventDefault();
+    } else {
+            setSuccessFor(street_address);
+        }
 
+    if(cityValue ==='') {
+        setErrorFor(city, "Empty input");
+        e.preventDefault();
+    } else {
+            setSuccessFor(city);
+        }
+
+    if(stateValue ==='') {
+        setErrorFor(state, "Empty input");
+        e.preventDefault();
+    } else {
+            setSuccessFor(state);
+        }
+    if(zipValue ==='') {
+        setErrorFor(zip, "Empty input");
+        e.preventDefault();
+    } else {
+            setSuccessFor(zip);
+        }
   });
 
-/*Validators*/
-function a_zA_Z(input) {
-    return /^[a-zA-Z]*$/.test(input);
-}
-
-function isfacilitatorinvalid(input) {return !(input == "Laura" || input =="Fazil" || input =="Harsh");
-}
 
 /*success/error functions */
 function setErrorFor(input, message) {

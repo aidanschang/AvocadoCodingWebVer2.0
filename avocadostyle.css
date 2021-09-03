@@ -425,7 +425,7 @@ body {
 
 #signup_container h1 {
     text-align: center;
-    font-size: 4vw;
+    font-size: 6vw;
     font-weight: bolder;
     margin-top: 2em;   
 }
@@ -452,11 +452,6 @@ body {
     border-style: none;
     border-bottom: 1px solid;
     outline: none;
-} 
- 
-#primary_contact, #student_info, #program_registration {
-    display: flex;
-    align-items: left;
 }
 
 #primary_fullname, #student_fullname {
@@ -473,19 +468,9 @@ body {
     margin: 0.5em 0 1.5em 0.5em;
 }
 
-#city {
-    width: 45%;
-    margin: 0em 0.5em 3em 0em;
-}
-
-#state {
-    width: 25%;
-    margin: 0em 0.5em 3em 0.5em;
-}
-
-#zip {
-    width: 20%;
-    margin: 0em 0em 3em 0.5em;
+#city, #state, #zip {
+    width: 30%;
+    margin-bottom: 1.5em;
 }
 
 .course_checkbox, .gender_radio_btn, .agreement_radio_btn, .find_us {

@@ -1,12 +1,13 @@
 const formTest = document.querySelectorAll('.form');
 const submitInput = document.getElementById('submit');
-
+let courses = form.querySelectorAll('input[name="class"]').value;
+console.log(courses);
 
 
 function getDataForm(e) {
     e.preventDefault();
     var formData = new FormData(formTest[0]);
-    console.log(formData);
+    
     const toSend = {
         primary_first_name: formData.get('firstname'),
         primary_last_name: formData.get('lastname'),
@@ -19,7 +20,7 @@ function getDataForm(e) {
         student_last_name: formData.get('student_lastname'),
         student_dob: formData.get('birthday'),
         student_gender: formData.get('gender'),
-        courses_picked: formData.get('class'),
+        
     };
     console.log(toSend);
     

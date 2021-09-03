@@ -9,205 +9,135 @@
 <body>
     <page-header></page-header>
 
-    <div id="signup_container">
+    <div id="signup_container"> 
+        <form class= "form" id="form_container" action="" method="POST">
+            <h1 >Sign up</h1>
 
-        <h1 class="section_title">Fall 2021 Registration Form</h1>
-        
-        <section id="class_information" class="signup_sections">
-            
-            <div class="class_details">
-                <h3 class="class_title">Scratch</h3>
-                <p class="class_description">
-                    Take us into the real world of coding and explore the secrets of computers. Learn how to give instructions, how to operate NPC, and open your knowledge of the game world! "Indulging" in games is not as good as indulging in designing games!
-                </p>
-                <div class= "class_level_box">
-                    <dl class="class_levels">
-                        <dt>Scratch I (beginners):</dt>
-                        <dd>Duration: 45 minutes/session</dd>
-                        <dd>Age range: 6-10 years old</dd>
-                        <dd>Number of students per class: 6-8</dd>
-                    </dl>
-                    <dl class="class_levels">
-                        <dt>Scratch II (Advanced):</dt>
-                        <dd>Duration: 45 minutes/session</dd>
-                        <dd>Age range: 7-12 years old</dd>
-                        <dd>Number of students per class: 6-8</dd>
-                    </dl>
+            <!--Primary Contact-->
+            <div class="form_control" id="primary_contact">
+                <h2 class="steps">Primary Contact</h2>
+                
+                <div id="primary_fullname">
+                    <input class='fillout_input' type="text" placeholder= 'First Name' id='firstname' name="firstname">
+                    <p class='error-message'>Error message</p>
+                    <input class='fillout_input' type="text" placeholder= 'Last Name' id='lastname' name="lastname">
+                    <p class='error-message'>Error message</p>
+                </div>
+
+                <div class="address">
+                    <input class='fillout_input' placeholder= 'Stress Address Line 1' id='streetaddress1' name="streetaddress1"> 
+                    <p class='error-message'>Error message</p>
+                </div>
+
+                <div class="address">    
+                    <input class='fillout_input' placeholder= 'Stress Address Line 2' id='streetaddress2' name="streetaddress2"> 
+                </div>
+
+                <div class="city_state_zip">
+                    <input class='fillout_input' id='city' placeholder= 'City' name="city"> 
+                    <p class='error-message'>Error message</p>
+                
+                    <input class='fillout_input' id='state' placeholder= 'State' name="state"> 
+                    <p class='error-message'>Error message</p>
+                
+                    <input class='fillout_input' id='zip' placeholder= 'Zip Code' name="zip"> 
+                    <p class='error-message'>Error message</p>
+                </div>
+
+                <div id="email">
+                    <input class='fillout_input' type="email" placeholder= 'Email' id='email' name="email"> 
+                    <p class='error-message'>Error message</p>
+                </div>
+
+                <div id="phonenumber">
+                    <input class='fillout_input' type="number" placeholder= 'Phone Number' id='phonenumber' name="phonenumber"> 
+                    <p class='error-message'>Error message</p>
                 </div>
             </div>
 
-            <div class="class_details">
-                <h3 class="class_title">Python</h3>
-                <p class="class_description">
-                    Children will learn to use the computer to find and analyze problems. They will not be afraid of difficult to split tasks, and finally solve the problem further. From conditionals, loops, lists to functions, these real computer concepts will step into children's curious minds.
-                    The whole course will solve and split different problems, collaborate with each other, and learn things that cannot be learned outside the classroom. The collaborative project at the end of the course is to teach children to create their own personal project with full of sense of accomplishment and fun!                </p>
-                <div class= "class_level_box">
-                    <dl class="class_levels">
-                        <dt>Python I (beginners):</dt>
-                        <dd>Duration: 60 minutes/session</dd>
-                        <dd>Age range: 10 years old or above</dd>
-                        <dd>Number of students per class: 6-8</dd>
-                    </dl>
-                    <dl class="class_levels">
-                        <dt>Python II (Advanced):</dt>
-                        <dd>Duration: 45 minutes/session</dd>
-                        <dd>Age range: 7-12 years old</dd>
-                        <dd>Number of students per class: 6-8</dd>
-                    </dl>
+            <!--Student Information-->
+            <div class="form_control" id="student_info">
+                <h2>Student Infomation</h2>
+                
+                <div id="student_fullname">
+                    <input class='fillout_input' type="text" placeholder= 'Student First Name' id="student_firstname" name="student_firstname">
+                    <p class='error-message'>Error message</p>
+
+                    <input class='fillout_input' type="text" placeholder= 'Student Last Name' id="student_lastname" name="student_lastname">
+                    <p class='error-message'>Error message</p>
                 </div>
+                
+                <div id="dob">
+                    <h4>Student Date of Birth:</h4>
+                    <input class='fillout_input' id="dob_input" type="date" placeholder= 'Student Date of Birth' name="birthday"> 
+                    <p class='error-message'>Error message</p>
+                </div>
+
+                <div id="gender">
+                    <h4>Student Gender:</h4>
+                    <div class="gender_radio_btn"><input class ='radio_btn_input' type="radio" name = "gender" value = "male"/>
+                        Male</div>
+                    <div class="gender_radio_btn"><input class ='radio_btn_input' type="radio" name = "gender" value = "female"/>
+                        Female</div>
+                    <p class='error-message'>Error message</p>
+                </div>
+                
+                <div id="pick_classes">
+                    <h4>Pick your classes:</h4>
+                    <div class="course_checkbox"><input class='checkbox_input' type="checkbox" name="class" value="scratch1"/>
+                    Scratch I Sat 11AM PST (Start Date: 9/4)</div>
+                    <div class="course_checkbox"><input class='checkbox_input' type="checkbox" name="class" value="scratchii_thu"/>
+                    Scratch II Thu 5PM PST (Start Date: 8/12)</div>
+                    <div class="course_checkbox"><input class='checkbox_input' type="checkbox" name="class" value="scratchii_sat"/>
+                    Scratch II Sat 2PM PST (Start Date: 8/14</div>
+                    <div class="course_checkbox"><input class='checkbox_input' type="checkbox" name="class" value="pythoni"/>
+                    Python I Sat 10AM PST (Start Date: 8/14)</div>
+                    <div class="course_checkbox"><input class='checkbox_input' type="checkbox" name="class" value="robloxstudio"/>
+                    Roblox Studio I</div>
+                    <p class='error-message'>Error message</p>
+                </div>
+                
             </div>
 
-            <div class="class_details">
-                <h3 class="class_title">Roblox Studio</h3>
-                <p class="class_description">
-                    Take us into the real world of coding and explore the secrets of computers. Learn how to give instructions, how to operate NPC, and open your knowledge of the game world! "Indulging" in games is not as good as indulging in designing games!
-                </p>
-                <div class= "class_level_box">
-                    <dl class="class_levels">
-                        <dt>Scratch I (beginners):</dt>
-                        <dd>Duration: 45 minutes/session</dd>
-                        <dd>Age range: 6-10 years old</dd>
-                        <dd>Number of students per class: 6-8</dd>
-                    </dl>
-                    <dl class="class_levels">
-                        <dt>CScratch II (Advanced):</dt>
-                        <dd>Duration: 45 minutes/session</dd>
-                        <dd>Age range: 6 years old or above</dd>
-                        <dd>Number of students per class: 6-8</dd>
-                    </dl>
+            <div class="form_control" id="program_registration">
+                <h2>Policy Agreement</h2>
+                
+                <div id="class_policy">
+                    <h4>The Coding Class Policy:</h4>
+                    <p>Parents can join our pre-talk session to decide whether to participate in our class. Once starting, the tuition fee is nonrefundable.</p> 
                     
+                    <h4>I agree to pay the full tuition fee before the first class: </h4>
+                    <div class="agreement_radio_btn"><input class ='radio_btn_input' type="radio" id = "male" name = "aggrement" value = "agree">
+                        Agree</div>
+                    <div class="agreement_radio_btn"><input class ='radio_btn_input' type="radio" id = "female" name = "aggrement" value = "disagree">
+                        Disagree </div> 
+                    <p class='error-message'>Error message</p>
                 </div>
-            </div>
-        </section>
-        
-        <!--Sign Up Starts Here-->
-        <h1 >Sign up</h1>
-
-        <section id="signup_form" class="signup_sections">
-            
-            <form class= "form" id="form_container" action="" method="POST">
-                <!--Primary Contact-->
-                <div class="form_control" id="primary_contact">
-                    <h2 class="steps">Primary Contact</h2>
+                
+                <div id="find_us">
+                    <h4>How did you find us:</h4>
                     
-                    <div id="fullname">
-                        <input class='fillout_input' type="text" placeholder= 'First Name' id='firstname' name="firstname">
-                        <p class='error-message'>Error message</p>
-
-                        <input class='fillout_input' type="text" placeholder= 'Last Name' id='lastname' name="lastname">
-                        <p class='error-message'>Error message</p>
+                    <div class="find_us"><input class='checkbox_input' type="checkbox" name="traffic_source" value="friend"/>
+                    Friend</div>
+                    <div class="find_us"><input class='checkbox_input' type="checkbox" name="traffic_source" value="whatsapp"/>
+                    WhatsApp</div>
+                    <div class="find_us"><input class='checkbox_input' type="checkbox" name="traffic_source" value="wechat"/>
+                    Wechat</div>
+                    <div id="find_us_other_container">
+                        Other:
+                        <div class="find_us"><input class='radio-input' id="find_us_other_input" type="text" name="traffic_source" placeholder="Internet"/>
+                        </div> 
                     </div>
-
-                    <div id="address">
-                        <input class='fillout_input' placeholder= 'Stress Address Line 1' id='streetaddress1' name="streetaddress1"> 
-                        <p class='error-message'>Error message</p>
-                        <input class='fillout_input' placeholder= 'Stress Address Line 2' id='streetaddress2' name="streetaddress2"> 
-                        <input class='fillout_input' id='city' placeholder= 'City' name="city"> 
-                        <p class='error-message'>Error message</p>
-                        <input class='fillout_input' id='state' placeholder= 'State' name="state"> 
-                        <p class='error-message'>Error message</p>
-                        <input class='fillout_input' id='zip' placeholder= 'Zip Code' name="zip"> 
-                        <p class='error-message'>Error message</p>
-                    </div>
-
-                    <div id="email">
-                        <input class='fillout_input' type="email" placeholder= 'Email' id='email' name="email"> 
-                        <p class='error-message'>Error message</p>
-                    </div>
-
-                    <div id="phonenumber">
-                        <input class='fillout_input' type="number" placeholder= 'Phone Number' id='phonenumber' name="phonenumber"> 
-                        <p class='error-message'>Error message</p>
-                    </div>
-                    
-                </div>
-    
-                <!--Student Information-->
-                <div class="form_control" id="student_info">
-                    <h2>Student Infomation</h2>
-                    
-                    <div id="student_fullname">
-                        <input class='fillout_input' type="text" placeholder= 'Student First Name' id="student_firstname" name="firstname">
-                        <p class='error-message'>Error message</p>
-
-                        <input class='fillout_input' type="text" placeholder= 'Student Last Name' id="student_lastname" name="lastname">
-                        <p class='error-message'>Error message</p>
-                    </div>
-                    
-                    <div id="dob">
-                        <h4>Student Date of Birth:</h4>
-                        <input class='fillout_input' id="dob_input" type="date" placeholder= 'Student Date of Birth' name="birthday"> 
-                        <p class='error-message'>Error message</p>
-                    </div>
-
-                    <div id="gender">
-                        <h4>Student Gender:</h4>
-                        <div class="gender_radio_btn"><input class ='radio_btn_input' type="radio" name = "gender" value = "male"/>
-                            Male</div>
-                        <div class="gender_radio_btn"><input class ='radio_btn_input' type="radio" name = "gender" value = "female"/>
-                            Female</div>
-                        <p class='error-message'>Error message</p>
-                    </div>
-                    
-                    
-                    <div id="pick_classes">
-                        <h4>Pick your classes:</h4>
-                        <div class="course_checkbox"><input class='checkbox_input' type="checkbox" name="class" value="scratch1"/>
-                        Scratch I Sat 11AM PST (Start Date: 9/4)</div>
-                        <div class="course_checkbox"><input class='checkbox_input' type="checkbox" name="class" value="scratchii_thu"/>
-                        Scratch II Thu 5PM PST (Start Date: 8/12)</div>
-                        <div class="course_checkbox"><input class='checkbox_input' type="checkbox" name="class" value="scratchii_sat"/>
-                        Scratch II Sat 2PM PST (Start Date: 8/14</div>
-                        <div class="course_checkbox"><input class='checkbox_input' type="checkbox" name="class" value="pythoni"/>
-                        Python I Sat 10AM PST (Start Date: 8/14)</div>
-                        <div class="course_checkbox"><input class='checkbox_input' type="checkbox" name="class" value="robloxstudio"/>
-                        Roblox Studio I</div>
-                        <p class='error-message'>Error message</p>
-                    </div>
-                    
-                </div>
-    
-                <div class="form_control" id="program_registration">
-                    <h2>Policy Agreement</h2>
-                    
-                    <div id="class_policy">
-                        <h4>The Coding Class Policy:</h4>
-                        <p>Parents can join our pre-talk session to decide whether to participate in our class. Once starting, the tuition fee is nonrefundable.</p> 
                         
-                        <h4>I agree to pay the full tuition fee before the first class: </h4>
-                        <div class="agreement_radio_btn"><input class ='radio_btn_input' type="radio" id = "male" name = "aggrement" value = "agree">
-                            Agree</div>
-                        <div class="agreement_radio_btn"><input class ='radio_btn_input' type="radio" id = "female" name = "aggrement" value = "disagree">
-                            Disagree </div> 
-                        <p class='error-message'>Error message</p>
-                    </div>
-                    
-                    <div id="find_us">
-                        <h4>How did you find us:</h4>
-                        
-                        <div class="find_us"><input class='checkbox_input' type="checkbox" name="traffic_source" value="friend"/>
-                        Friend</div>
-                        <div class="find_us"><input class='checkbox_input' type="checkbox" name="traffic_source" value="whatsapp"/>
-                        WhatsApp</div>
-                        <div class="find_us"><input class='checkbox_input' type="checkbox" name="traffic_source" value="wechat"/>
-                        Wechat</div>
-                        <div id="find_us_other_container">
-                            Other:
-                            <div class="find_us"><input class='radio-input' id="find_us_other_input" type="text" name="traffic_source" placeholder="Internet"/>
-                            </div> 
-                        </div>
-                         
-                    </div>
                 </div>
-            </form>
+            </div>
             <input id='submit' type="submit" name='submit' value="Submit">
-        </section> 
+        </form>
     </div>
-    <!--<script src= validator.js></script>-->
     <script src= navbar.js></script>
     <!--<script src= form_submission.js></script>-->
     <script src= validator.js></script>
-    <script src= readform.js></script>
+    <!--<script src= readform.js></script>-->
 </body>    
 </html>
 
