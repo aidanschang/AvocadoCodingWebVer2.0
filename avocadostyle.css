@@ -396,7 +396,6 @@ body {
     justify-content: center;
     align-content: center;
     flex-wrap: wrap;
-    
 }
 
 .course_box {
@@ -410,40 +409,12 @@ body {
     box-shadow: 0 0 1em gray;
 }
 
-/*===== Sign Up =====*/
 
+/*===Sign Up Form===*/
 #signup_container {
-    max-width: 90%;
-    padding-top: 5em;
+    max-width: 100%;
+    padding: 5em 2em 2em 2em;
     margin: 0 auto;
-}
-
-
-#signup_container h1 {
-    text-align: center;
-    font-size: 4vw;
-    font-weight: bolder;
-    margin-top: 2em;   
-}
-
-#signup_container dt {
-    font-weight: bold;
-}
-
-.class_level_box {
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;
-}
-
-.class_levels {
-    margin: 2em 2em 1em;
-}
-
-#signup_form {
-    font-size: 1.2rem;
 }
 
 #form_container {
@@ -452,23 +423,25 @@ body {
     flex-wrap: wrap;
 }
 
+#signup_container h1 {
+    text-align: center;
+    font-size: 4vw;
+    font-weight: bolder;
+    margin-top: 2em;   
+}
+
 .form_control .error-message {
     display:none;
 }
 
 .form_control {
     width:100%;
-    
+    font-size: 1.2rem;
     padding:1em;
     margin-top: 1em;
     border: 1px solid;
     display:flex;
     flex-direction: column;
-}
-
-#primary_contact, #student_info, #program_registration {
-    display: flex;
-    align-items: left;
 }
 
 .fillout_input {
@@ -479,12 +452,16 @@ body {
     border-style: none;
     border-bottom: 1px solid;
     outline: none;
+} 
+ 
+#primary_contact, #student_info, #program_registration {
+    display: flex;
+    align-items: left;
 }
 
-#fullname, #student_fullname {
+#primary_fullname, #student_fullname {
     display: flex;
-    
-}
+} 
 
 #firstname, #student_firstname {
     width: 50%;
@@ -496,10 +473,6 @@ body {
     margin: 0.5em 0 1.5em 0.5em;
 }
 
-#signup_form h4 {
-    margin-top:0;
-    margin-bottom: .5rem;
-}
 #city {
     width: 45%;
     margin: 0em 0.5em 3em 0em;
@@ -552,7 +525,7 @@ body {
     margin: 2em auto;
     display: flex;
     justify-content: center;
-}
+} 
 
 
 /*=== FOOTER ===*/
@@ -579,3 +552,20 @@ body {
     text-decoration: none;
     
 }
+
+
+/* error/success handling */
+.form-control.success input{
+    border-color: green;
+}
+
+.form-control.error input {
+    border-color: red;
+}
+
+
+.form-control.error .error-message {
+    color: red;
+    display:block;
+}
+
