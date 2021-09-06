@@ -10,18 +10,22 @@
     <page-header></page-header>
 
     <div id="signup_container"> 
-        <form class= "form" id="form_container" action="" method="POST">
+        <form class= "form" id="form_container" method="POST">
             <h1 >Sign up</h1>
 
             <!--Primary Contact-->
-            <div class="form_control" id="primary_contact">
+            <div class="form_control" action="" id="primary_contact">
                 <h2 class="steps">Primary Contact</h2>
                 
                 <div id="primary_fullname">
-                    <input class='fillout_input' type="text" placeholder= 'First Name' id='firstname' name="firstname">
-                    <p class='error-message'>Error message</p>
-                    <input class='fillout_input' type="text" placeholder= 'Last Name' id='lastname' name="lastname">
-                    <p class='error-message'>Error message</p>
+                    <div>
+                        <input class='fillout_input' type="text" placeholder= 'First Name' id='firstname' name="firstname">
+                        <p class='error-message'>Error message</p>
+                    </div>
+                    <div>
+                        <input class='fillout_input' type="text" placeholder= 'Last Name' id='lastname' name="lastname">
+                        <p class='error-message'>Error message</p>
+                    </div>
                 </div>
 
                 <div class="address">
@@ -34,14 +38,18 @@
                 </div>
 
                 <div class="city_state_zip">
-                    <input class='fillout_input' id='city' placeholder= 'City' name="city"> 
-                    <p class='error-message'>Error message</p>
-                
-                    <input class='fillout_input' id='state' placeholder= 'State' name="state"> 
-                    <p class='error-message'>Error message</p>
-                
-                    <input class='fillout_input' id='zip' placeholder= 'Zip Code' name="zip"> 
-                    <p class='error-message'>Error message</p>
+                    <div>
+                        <input class='fillout_input' id='city' placeholder= 'City' name="city"> 
+                        <p class='error-message'>Error message</p>
+                    </div>
+                    <div>
+                        <input class='fillout_input' id='state' placeholder= 'State' name="state"> 
+                        <p class='error-message'>Error message</p>
+                    </div>
+                    <div>
+                        <input class='fillout_input' id='zip' placeholder= 'Zip Code' name="zip"> 
+                        <p class='error-message'>Error message</p>
+                    </div>
                 </div>
 
                 <div id="email">
@@ -60,11 +68,14 @@
                 <h2>Student Infomation</h2>
                 
                 <div id="student_fullname">
-                    <input class='fillout_input' type="text" placeholder= 'Student First Name' id="student_firstname" name="student_firstname">
-                    <p class='error-message'>Error message</p>
-
-                    <input class='fillout_input' type="text" placeholder= 'Student Last Name' id="student_lastname" name="student_lastname">
-                    <p class='error-message'>Error message</p>
+                    <div>
+                        <input class='fillout_input' type="text" placeholder= 'Student First Name' id="student_firstname" name="student_firstname">
+                        <p class='error-message'>Error message</p>
+                    </div>
+                    <div>
+                        <input class='fillout_input' type="text" placeholder= 'Student Last Name' id="student_lastname" name="student_lastname">
+                        <p class='error-message'>Error message</p>
+                    </div>
                 </div>
                 
                 <div id="dob">

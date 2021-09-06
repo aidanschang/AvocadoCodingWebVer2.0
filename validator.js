@@ -25,6 +25,8 @@ document.getElementById("submit").addEventListener("click", (e) => {
     const cityValue = city.value.trim();
     const stateValue = state.value.trim();
     const zipValue = zip.value.trim();
+    const emailValue = email.value.trim();
+    const phoneValue = phone_number.value.trim();
     
 
     /*student Info*/
@@ -73,6 +75,25 @@ document.getElementById("submit").addEventListener("click", (e) => {
     } else {
             setSuccessFor(zip);
         }
+    if(emailValue ==='') {
+        setErrorFor(zip, "Empty input");
+        e.preventDefault();
+    } else {
+            setSuccessFor(zip);
+        }
+    if(phoneValue ==='') {
+        setErrorFor(zip, "Empty input");
+        e.preventDefault();
+    } else {
+            setSuccessFor(zip);
+        }
+
+
+
+
+
+
+
   });
 
 

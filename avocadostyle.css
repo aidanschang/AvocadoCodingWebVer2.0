@@ -459,12 +459,12 @@ body {
 } 
 
 #firstname, #student_firstname {
-    width: 50%;
+  
     margin: 0.5em 0.5em 1.5em 0;
 }
 
 #lastname, #student_lastname {
-    width: 50%;
+
     margin: 0.5em 0 1.5em 0.5em;
 }
 
