@@ -83,7 +83,6 @@ document.getElementById("submit").addEventListener("click", (e) => {
         }
   });
 
-
 /*success/error functions */
 function setErrorFor(input, message) {
     const formControl = input.parentElement;

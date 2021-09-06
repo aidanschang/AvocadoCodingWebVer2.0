@@ -1,6 +1,6 @@
 /*===GLOBAL===*/
 :root {
-    --background: rgba(166, 204, 142);
+    --background: rgb(164, 179, 197);
     --headerfontcolor: #26272A;
     --fontcolor: rgb(195, 211, 86);
     font-size: 16px;
@@ -233,12 +233,15 @@ body {
 #author {
     text-align: right;
     font-size: 3rem;
+    color:white;
+    text-shadow: 2px 2px 15px #26272a;
 }
 
 #hero_btn_container {
-    margin-top: 1em;
+    margin-top: 2em;
 }
-#hero_container a {
+
+.hero_btn {
     text-decoration: none;
     border: 2px solid;
     color: white;
@@ -304,8 +307,7 @@ body {
     padding: 5em;
     background-image: url("IMG_4798.jpg");
     background-position: center;
-    background-size:cover;
-    align-items: left;
+    background-size:cover; 
 }
 
 #team_hero_header {
@@ -314,30 +316,12 @@ body {
     font-weight: bolder;
     color:white;
     text-shadow: 2px 2px 15px #26272a;
-    text-align: left;
-}
-
-#team_hero_content {
-    text-align: left;
-    font-size: 3rem;
-}
-
-#team_header {
-    font-size: 5rem;
-    font-weight: bolder;
-    color:white;
-    text-shadow: 2px 2px 15px #26272a;
-}
-
-#author {
-    text-align: right;
-   
-    font-size: 3rem;
+    text-align: center;
 }
 
 #team_member_container {
     width: 100%;
-    padding: 10em 2em;
+    padding: 2em;
 }
 
 #team_member_container h1{
@@ -352,15 +336,15 @@ body {
 }
 
 .teammember_profiles {
-    background-color: var(--fontcolor);
+    background-color: var(--background);
     padding: 0 2em;
     margin: 1.5em auto;
     text-align: left;
     overflow: hidden;
     max-width: 900px;
-    border-radius: 1em;
+    
     border: 1px gray;
-    box-shadow: 0 0 1em gray;
+    box-shadow: 0 0 5px gray;
 }
 
 
