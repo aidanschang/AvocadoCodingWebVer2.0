@@ -27,13 +27,7 @@ document.getElementById("submit").addEventListener("click", (e) => {
     const zipValue = zip.value.trim();
     const emailValue = email.value.trim();
     const phoneValue = phone_number.value.trim();
-    
 
-    /*student Info*/
-    const student_firstNameValue = student_firstName.value.trim();
-    const student_lastNameValue = student_lastName.value.trim();
-    const dobValue = student_dob.value.trim();
-    const genderValue = student_gender.value.trim();
 
     if(primary_firstNameValue ==='') {
         setErrorFor(primary_firstName, "Empty input");
@@ -87,13 +81,6 @@ document.getElementById("submit").addEventListener("click", (e) => {
     } else {
             setSuccessFor(zip);
         }
-
-
-
-
-
-
-
   });
 
 
