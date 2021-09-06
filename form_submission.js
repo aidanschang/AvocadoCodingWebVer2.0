@@ -1,23 +1,7 @@
 const btn = document.getElementById('submit');
 
 btn.addEventListener('click', function(){
-    // document.querySelectorAll( '#primary_contact .fillout-input')
-
-    //var gender = document.querySelector('input[name="gender"]:checked').value;
-    
-    // //check box
-    // var form = document.getElementById('student_info');
-    // var chks = form.querySelectorAll('input[name="class"]');
-    // var checked = [];
-    
-    // for(var i = 0; i < chks.length; i++){
-    //     if(chks[i].checked){
-    //         checked.push(chks[i].value);
-    //     }   
-    // }
-    // console.log(checked);
-    // return checked;
-    
+   
 var xmlhttp = new XMLHttpRequest();
 var url = "http://39.108.187.78:5814/home/studentInfoForm";
 
