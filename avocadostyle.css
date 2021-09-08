@@ -154,7 +154,7 @@ body {
         display: none;
     }
 
-    header {
+    #navbar_header {
         display: flex;
         justify-content: space-between;
         
@@ -202,25 +202,56 @@ body {
     }
 }
 
+/*=== FOOTER ===*/
 
-/*===== Hero =====*/
+#avocado_coding_footer {
+    width:100%;
+    padding-top: 50px;
+    background-color: white;
+}
+
+#footer_nav  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+#footer_nav  li {
+    margin-bottom: 1em;
+    margin-right: 1em;
+    text-align: center;
+}
+
+#footer_nav a {
+    text-decoration: none;
+    color: var(--headerfontcolor);
+    text-transform: uppercase; 
+}
+
+/*===== About_Hero =====*/
+#index_container {
+    height: 1800px;
+}
 
 #hero_container {
-    width:100%;
-    padding: 5em 1em;
+    padding: 0 4em;
+    max-width: 90%;
+    height: 1000px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-#index_hero_box {
-    padding: 8em;
-    height: 1000px;
+    position:relative;
     background-image: url("IMG_4801.jpg");
     background-position: center;
     background-size:cover;
+    
 }
+
 
 #quotation {
     margin-top:0;
@@ -249,16 +280,51 @@ body {
     font-weight: bold;
     
 }
+
+@media screen and (min-width: 800px) {
+    #hero_container {
+        padding: 2em;
+        max-width: 75%;
+        height: 1000px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position:relative;
+        background-image: url("IMG_4801.jpg");
+        background-position: center;
+        background-size:cover;
+    }
+
+    #index_hero_box {
+        padding: 10em;
+        height: 1000px;
+        background-image: url("IMG_4801.jpg");
+        background-position: center;
+        background-size:cover;
+    }
+    
+    .hero_btn {
+        text-decoration: none;
+        border: 2px solid;
+        color: white;
+        padding:1rem;
+        margin-right: 1em;
+        font-weight: bold;
+        box-shadow: 1px 1px 10px #7d8086;
+        background-color: var(--background);
+    }
+}
+
 /*===== About =====*/
 #about_container {
-    margin: -6em auto;
-    padding: 2em;
     background-color: var(--background);
-    width: 90%;
     max-width: 70%;
     position: absolute;
+    top: 950px;
+    left: 0;
     right: 0;
-    left: 0;  
+    margin: auto;  
 }
 
 #about_box {
@@ -321,7 +387,7 @@ body {
 
 #team_member_container {
     width: 100%;
-    padding: 2em;
+    
 }
 
 #team_member_container h1{
@@ -330,19 +396,22 @@ body {
     font-size: 4rem;
     font-weight: bolder;
 }
+
 #teachingteam_box {
     margin-bottom: 2em;
     font-size: 1.5rem;
+    display:flex;
+    flex-wrap: wrap;
+    
 }
 
 .teammember_profiles {
     background-color: var(--background);
     padding: 0 2em;
-    margin: 1.5em auto;
+    margin: 1em auto;
     text-align: left;
     overflow: hidden;
-    max-width: 900px;
-    
+    width: 550px;
     border: 1px gray;
     box-shadow: 0 0 5px gray;
 }
@@ -387,10 +456,10 @@ body {
     margin: 0 1em 2em 1em;
     padding: 1em;
     font-size: 1.5rem;
-    background-color: var(--fontcolor);
-    border-radius: 1em;
+    background-color: var(--background);
+    
     border: 1px gray;
-    box-shadow: 0 0 1em gray;
+    box-shadow: 0 0 5px gray;
 }
 
 
@@ -419,10 +488,10 @@ body {
 }
 
 .form_control {
-    width:100%;
+    width:550px;
     font-size: 1.2rem;
     padding:1em;
-    margin-top: 1em;
+    margin: 1em auto;
     border: 1px solid;
     display:flex;
     flex-direction: column;
@@ -497,30 +566,7 @@ body {
 } 
 
 
-/*=== FOOTER ===*/
 
-#avocado_coding_footer {
-    width:100%;
-    padding-top: 600px;
-    
-}
-
-#footer_nav  ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-#footer_nav  li {
-    margin-bottom: 1em;
-    margin-right: 1em;
-    text-align: center;
-}
-
-#footer_nav a {
-    text-decoration: none;
-    
-}
 
 
 /* error/success handling */

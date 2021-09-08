@@ -18,7 +18,7 @@ class pageHeader extends HTMLElement {
             <span></span>
         </div>
         </label>
-    </header>
+        </header>
         `
     }
 }
