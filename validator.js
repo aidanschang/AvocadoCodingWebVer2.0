@@ -19,14 +19,14 @@ let student_gender = document.getElementById("student_lastname");
 
 document.getElementById("submit").addEventListener("click", (e) => {
    
-    const primary_firstNameValue = primary_firstName.value.trim();
-    const primary_lastNameValue = primary_lastName.value.trim();
-    const streetValue = street_address.value.trim();
-    const cityValue = city.value.trim();
-    const stateValue = state.value.trim();
-    const zipValue = zip.value.trim();
-    const emailValue = email.value.trim();
-    const phoneValue = phone_number.value.trim();
+    const primary_firstNameValue = primary_firstName.value&&primary_firstName.value.trim();
+    const primary_lastNameValue = primary_lastName.value&&primary_lastName.value.trim();
+    const streetValue = street_address.value&&street_address.value.trim();
+    const cityValue = city.value&&city.value.trim();
+    const stateValue = state.value&&state.value.trim();
+    const zipValue = zip.value&&zip.value.trim();
+    const emailValue = email.value&&email.value.trim();
+    const phoneValue = phone_number.valuer&&phone_number.value.trim();
 
 
     if(primary_firstNameValue ==='') {
