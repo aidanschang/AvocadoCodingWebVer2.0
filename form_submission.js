@@ -30,11 +30,14 @@ document.getElementById("submit").addEventListener("click", (e) => {
     const phoneValue = phone_number.valuer&&phone_number.value.trim();
 
     var flag = true
+    var hasEmptyInput = false
+
     if(primary_firstNameValue ==='') {
         setErrorFor(primary_firstName, "Empty input");
         e.preventDefault();
     } else {
             setSuccessFor(primary_firstName);
+            
         }
 
     if(primary_lastNameValue ==='') {
@@ -82,26 +85,39 @@ document.getElementById("submit").addEventListener("click", (e) => {
     } else {
             setSuccessFor(zip);
         }
-    var xmlhttp = new XMLHttpRequest();
-    var url = "http://39.108.187.78:5814/home/studentInfoForm";
     
-    xmlhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-            var myArr = JSON.parse(this.responseText);
-            console.log(myArr);
-            myFunction(myArr);
+    if(primary_firstNameValue ==='' || primary_lastNameValue ==='' || streetValue ==='' || cityValue ==='' || stateValue ==='' || zipValue ==='' || emailValue ==='' || phoneValue ==='') {
+        e.preventDefault(); 
+    } else {
+        var xmlhttp = new XMLHttpRequest();
+        var url = "http://39.108.187.78:5814/home/studentInfoForm";
+        
+        xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                var myArr = JSON.parse(this.responseText);
+                console.log(myArr);
+                myFunction(myArr);
+            }
+        };
+        
+        function myFunction(data) {
+            console.log("response",data)
         }
-    };
+        
+        if(flag){
+            xmlhttp.open("PUT", url, true);
+            xmlhttp.send(JSON.stringify({
+                primary_firstNameValue:primary_firstNameValue,
+                primary_lastNameValue:primary_lastNameValue,
+                streetValue:streetValue,
+                cityValue:cityValue,
+                stateValue:stateValue,
+                zipValue:zipValue,
+                emailValue:emailValue,
+                phoneValue:phoneValue}));
+            }
+        }
     
-    function myFunction(data) {
-        console.log("response",data)
-    }
-    if(flag){
-        xmlhttp.open("PUT", url, true);
-    xmlhttp.send(JSON.stringify({primary_firstNameValue:primary_firstNameValue,primary_lastNameValue:primary_lastNameValue,
-        streetValue:streetValue,cityValue:cityValue,stateValue:stateValue,zipValue:zipValue,
-        emailValue:emailValue,phoneValue:phoneValue}));
-    }
   });
 
 /*success/error functions */
