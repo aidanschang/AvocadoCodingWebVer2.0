@@ -87,8 +87,10 @@ document.getElementById("submit").addEventListener("click", (e) => {
         }
     
     if(primary_firstNameValue ==='' || primary_lastNameValue ==='' || streetValue ==='' || cityValue ==='' || stateValue ==='' || zipValue ==='' || emailValue ==='' || phoneValue ==='') {
+        console.log("failed");
         e.preventDefault(); 
     } else {
+        console.log("success");
         var xmlhttp = new XMLHttpRequest();
         var url = "http://39.108.187.78:5814/home/studentInfoForm";
         
