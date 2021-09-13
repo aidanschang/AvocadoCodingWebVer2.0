@@ -30,7 +30,7 @@ document.getElementById("submit").addEventListener("click", (e) => {
     const phoneValue = phone_number.valuer&&phone_number.value.trim();
 
     var flag = true
-    var hasEmptyInput = false
+
 
     if(primary_firstNameValue ==='') {
         setErrorFor(primary_firstName, "Empty input");

@@ -462,6 +462,42 @@ body {
     box-shadow: 0 0 5px gray;
 }
 
+/*===Projects===*/
+#project_section {
+    padding-top: 10em;
+}
+
+
+.project_videos {
+    height: 200px;
+    width: 350px;
+    
+}
+
+.project_container {
+    width: 90%;
+    border: 1px solid;
+    margin: auto;
+    overflow-x: auto;
+}
+.project_title{
+    
+    margin: 0 auto 0 auto;
+    
+    padding-left: 1em;
+    border-bottom: 1px solid;
+    
+}
+.project_row {
+    
+    margin: auto;
+    
+    display: flex;
+}
+.individual_project {
+    /* box-shadow: 0 0 10px gray inset; */
+    padding:1em;
+}
 
 /*===Sign Up Form===*/
 #signup_container {

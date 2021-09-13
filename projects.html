@@ -1,16 +1,57 @@
 <!DOCTYPE html>
-
+<html lang="en" class="background_img">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Avocado Learning</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <link href="avocadostyle.css" type="text/css" rel="stylesheet" media="screen"/>
-    <!-- <link href="print.css" type="text/css" rel="stylesheet" media="print"/> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    
 </head>
 <body>
+    <!-- Nav Bar-->
     <page-header></page-header>
-    <div> projects</div>
+    <!-- Projects-->
+    <section id="project_section">
+        <div class="project_container">
+            <div class="project_title">
+                <h2>Featured Scratch Projects</h2>
+            </div>
+            <div class="project_row">
+                
+                <div class="individual_project">
+                    <h2>Project 1 Title</h2>
+                    <video controls class=project_videos>
+                        <div class="individual_project"></div>
+                        <source src="video/1630687392964037.mp4" type="video/mp4">
+                    </video>
+                    <p class="project_description">
+                        Project 1 description.
+                    </p>
+                </div>
+                <div class="individual_project">
+                    <h2>Project 2 Title</h2>
+                    <video controls class=project_videos>
+                        <div class="individual_project"></div>
+                        <source src="video/001_WC-EditVideo_1.mp4" type="video/mp4">
+                    </video>
+                    <p class="project_description">
+                        Project 2 description.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer-->
+    <page-footer></page-footer>
+    
     <script src= navbar.js></script>
-
+    <script src= footer.js></script>
+    
 </body>    
 </html>
+
 
