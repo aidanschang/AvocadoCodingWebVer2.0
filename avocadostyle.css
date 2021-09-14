@@ -463,14 +463,35 @@ body {
 }
 
 /*===Projects===*/
+/* Scrollbar width */
+#project_section ::-webkit-scrollbar {
+    height: 10px;
+}
+
+/*Scrollbar Track */
+#project_section ::-webkit-scrollbar-track {
+background-color: transparent;
+border-radius: 10px;
+}
+
+/*Scrollbar Handle */
+#project_section ::-webkit-scrollbar-thumb {
+background: var(--fontcolor); 
+border-radius: 10px;
+}
+
+/*Scrollbar Handle on hover */
+#project_section ::-webkit-scrollbar-thumb:hover {
+background: gray; 
+}
+
 #project_section {
     padding-top: 10em;
 }
 
-
 .project_videos {
-    height: 200px;
-    width: 350px;
+    height: 140px;
+    width: 250px;
     
 }
 
@@ -478,25 +499,44 @@ body {
     width: 90%;
     border: 1px solid;
     margin: auto;
-    overflow-x: auto;
+    margin-bottom: 2em;
+    border-radius: 15px;
+    overflow: hidden;
 }
-.project_title{
-    
+
+.project_type{ 
     margin: 0 auto 0 auto;
-    
     padding-left: 1em;
     border-bottom: 1px solid;
-    
+    font-size: 2em;
+    font-weight: bold;
+    background-color: var(--background);
 }
-.project_row {
-    
+
+.project_row { 
     margin: auto;
-    
     display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    background-color: white;
 }
+
 .individual_project {
     /* box-shadow: 0 0 10px gray inset; */
     padding:1em;
+    scroll-snap-align: start;
+}
+
+.project_title {
+    margin:0;
+    padding:0;
+    font-size: 1.15em;
+    font-weight: bold;
+}
+
+.project_description {
+    margin:0;
+    padding:0;
 }
 
 /*===Sign Up Form===*/
