@@ -1,10 +1,14 @@
 /*===GLOBAL===*/
 :root {
-    --background: rgb(164, 179, 197);
-    --headerfontcolor: #26272A;
-    --fontcolor: rgb(195, 211, 86);
+    --background: rgb(254, 250, 224);
+    --avoseed: rgb(250, 237, 205);
+    --headerfontcolor: rgb(212, 163, 115);
+    --avogreen: rgb(204, 213, 174);
+    --avogreenL: rgb(233, 237, 201);
+    --darkgreen: rgb(40, 54, 24);
+    --darkbrown: rgb(88, 47, 14);
     font-size: 16px;
-    background-color: #E9EEF1;
+    background-color: var(--background);
   }
   
 *, *::before, *::after {
@@ -28,7 +32,7 @@ body {
 
 /*===NAV BAR===*/
 #navbar_header {
-    background-color: white;
+    background-color: var(--avogreenL);
     text-align: center;
     position: fixed;
     z-index:999;
@@ -45,7 +49,7 @@ body {
     text-align: right;
     top: 100%;
     right: 0;
-    background: #e9eef1;
+    background: var(--background);
     width: 100%;
     transform: scale(1, 0);
     transform-origin: top;
@@ -64,7 +68,7 @@ body {
 }
 
 #menu_nav  a {
-    color: var(--headerfontcolor);
+    color: var(--darkbrown);
     font-weight: bold;
     text-decoration: none;
     font-size: 1.2rem;
@@ -75,7 +79,7 @@ body {
 
 #navbar_header a {
     text-decoration: none;
-    color: var(--headerfontcolor);
+    color: var(--darkbrown);
 }
 
 #signup_button {
@@ -121,7 +125,7 @@ body {
 .nav-toggle-label span::before,
 .nav-toggle-label span::after {
     display: block;
-    background: var(--headerfontcolor);
+    background: var(--darkbrown);
     height: 2px;
     width: 2em;
     border-radius: 2px;
@@ -147,9 +151,7 @@ body {
 }
 @media screen and (min-width: 800px) {
 
-    #navbar_header {
-        background-color: #E9EEF1;
-    }
+   
     .nav-toggle-label {
         display: none;
     }
@@ -228,7 +230,7 @@ body {
 
 #footer_nav a {
     text-decoration: none;
-    color: var(--headerfontcolor);
+    color: var(--darkbrown);
     text-transform: uppercase; 
 }
 
@@ -239,7 +241,7 @@ body {
 
 #hero_container {
     padding: 0 4em;
-    max-width: 90%;
+    max-width: 95%;
     height: 1000px;
     margin: 0 auto;
     display: flex;
@@ -249,16 +251,14 @@ body {
     background-image: url("IMG_4801.jpg");
     background-position: center;
     background-size:cover;
-    
 }
-
 
 #quotation {
     margin-top:0;
     font-size: 5rem;
     font-weight: bolder;
-    color:white;
-    text-shadow: 2px 2px 15px #26272a;
+    color:var(--avogreenL);
+    text-shadow: 2px 2px 15px var(--darkgreen);
 }
 
 #author {
@@ -272,15 +272,25 @@ body {
     margin-top: 2em;
 }
 
-.hero_btn {
+.hero_btn_light {
     text-decoration: none;
     border: 2px solid;
     color: white;
     padding:1rem;
     font-weight: bold;
+    margin: 1em;
     
 }
 
+.hero_btn_dark {
+    text-decoration: none;
+    border: 2px solid white;
+    background-color: white;
+    color: var(--darkbrown);
+    padding:1rem;
+    font-weight: bold;
+    margin: 1em;
+}
 @media screen and (min-width: 800px) {
     #hero_container {
         padding: 2em;
@@ -318,7 +328,7 @@ body {
 
 /*===== About =====*/
 #about_container {
-    background-color: var(--background);
+    background-color: var(--avogreen);
     max-width: 70%;
     position: absolute;
     top: 950px;
@@ -349,6 +359,7 @@ body {
     font-size: 1rem;
     text-align: center;
     margin-bottom: 0.3em;
+    color: var(--darkgreen);
 }
 #about_section button {
     font-size: 1.3rem;
@@ -365,6 +376,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: var(--darkgreen);
 }
 
 #team_hero_box {
@@ -387,7 +399,6 @@ body {
 
 #team_member_container {
     width: 100%;
-    
 }
 
 #team_member_container h1{
@@ -402,11 +413,10 @@ body {
     font-size: 1.5rem;
     display:flex;
     flex-wrap: wrap;
-    
 }
 
 .teammember_profiles {
-    background-color: var(--background);
+    background-color: var(--avoseed);
     padding: 0 2em;
     margin: 1em auto;
     text-align: left;
@@ -416,7 +426,9 @@ body {
     box-shadow: 0 0 5px gray;
 }
 
-
+.teammember_profiles h3, .teammember_profiles p {
+    color: var(--darkgreen);
+}
 
 .team_member_name {
     text-align: center;
@@ -476,16 +488,21 @@ border-radius: 10px;
 
 /*Scrollbar Handle */
 #project_section ::-webkit-scrollbar-thumb {
-background: var(--fontcolor); 
+background: var(--avogreen); 
 border-radius: 10px;
 }
 
 /*Scrollbar Handle on hover */
 #project_section ::-webkit-scrollbar-thumb:hover {
-background: gray; 
+background: gray;
+}
+
+#project_section ::-webkit-scrollbar {
+    cursor: pointer; 
 }
 
 #project_section {
+    
     padding-top: 10em;
 }
 
@@ -500,7 +517,7 @@ background: gray;
     border: 1px solid;
     margin: auto;
     margin-bottom: 2em;
-    border-radius: 15px;
+    /* border-radius: 15px; */
     overflow: hidden;
 }
 
@@ -510,7 +527,7 @@ background: gray;
     border-bottom: 1px solid;
     font-size: 2em;
     font-weight: bold;
-    background-color: var(--background);
+    background-color: var(--avoseed);
 }
 
 .project_row { 
@@ -571,6 +588,11 @@ background: gray;
     border: 1px solid;
     display:flex;
     flex-direction: column;
+    background-color: var(--avoseed);
+}
+
+.form_control h2 {
+    text-align: center;
 }
 
 .fillout_input {
@@ -639,13 +661,13 @@ background: gray;
     margin: 2em auto;
     display: flex;
     justify-content: center;
+    background-color: var(--avogreenL);
+    border: 1px solid;
 } 
 
 
 
-
-
-/* error/success handling */
+/*===error/success handling===*/
 .form-control.success input{
     border-color: green;
 }
