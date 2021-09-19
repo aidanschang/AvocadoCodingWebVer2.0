@@ -1,7 +1,7 @@
 /*===GLOBAL===*/
 :root {
     --background: rgb(254, 250, 224);
-    --avoseed: rgb(250, 237, 205);
+    --hero: rgb(233, 245, 219);
     --headerfontcolor: rgb(212, 163, 115);
     --avogreen: rgb(204, 213, 174);
     --avogreenL: rgb(233, 237, 201);
@@ -255,10 +255,11 @@ body {
 
 #quotation {
     margin-top:0;
-    font-size: 5rem;
-    font-weight: bolder;
-    color:var(--avogreenL);
-    text-shadow: 2px 2px 15px var(--darkgreen);
+    font-size: 4.5rem;
+    font-weight: 1000;
+    color:white;
+    text-shadow: 2px 2px 15px #26272a;
+    text-transform: uppercase;
 }
 
 #author {
@@ -275,7 +276,7 @@ body {
 .hero_btn_light {
     text-decoration: none;
     border: 2px solid;
-    color: white;
+    color: var(--hero);
     padding:1rem;
     font-weight: bold;
     margin: 1em;
@@ -284,8 +285,8 @@ body {
 
 .hero_btn_dark {
     text-decoration: none;
-    border: 2px solid white;
-    background-color: white;
+    border: 2px solid var(--hero);
+    background-color: var(--hero);
     color: var(--darkbrown);
     padding:1rem;
     font-weight: bold;
@@ -430,14 +431,13 @@ body {
     color: var(--darkgreen);
 }
 
-.team_member_name {
-    text-align: center;
+.title {
+    font-style: italic;
 }
-
 .teacher_photos {
     height: 10em;
     margin: 0 1em 1em 0;
-    float: left;
+    float: right;
    
 }
 /*===== Courses =====*/
