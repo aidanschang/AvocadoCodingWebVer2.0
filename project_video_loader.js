@@ -1,4 +1,6 @@
 
+const videoContent = document.getElementById('project_row');
+
 //THE REQUEST
 const xhr = new XMLHttpRequest();
 xhr.open('GET', 'project_videos.json', true);
@@ -8,24 +10,33 @@ xhr.send();
 xhr.onload = function() {
     if ((xhr.status == 200) && (xhr.readyState === XMLHttpRequest.DONE)) {
         const myData = JSON.parse(xhr.responseText);
-        console.log(myData);
-        console.log(myData[0]);
-        console.log(myData[1]);
 
+        let videos = "";
+        // looping each videos
+        myData.forEach( video => {
+            videos += `
+            <div class="individual_project">
+                <video controls class=project_videos>
+                    <div class="individual_project"></div>
+                    <source src="${video.video_name}" type="video/mp4">
+                </video>
+                <p class="project_title">
+                    ${video.video_title}
+                </p>
+                <p class="project_description">
+                    ${video.video_description}
+                </p>
+            </div>`
+            ;
+        });
+        //write each videos into html
+        videoContent.innerHTML = videos;
+    }
+    else {
+        videos += `
+        <div class="individual_project">
+            <p>Videos not fund</p>
+        </div>`
     }
     
 };
-
-
-
-//HTML render
-
-
-// function obtained_data(data) {
-//     let degreeString = '';
-//     for (let i = 0; i < data.length; i++) {
-//         degreeString += `<p> ${data[i].University}: ${data[i].Type} in ${data[i].Major} ${data[i].Year}.</p>`;
-//     }
-    
-//     degreeContainer.insertAdjacentHTML('beforeend', degreeString);
-// }

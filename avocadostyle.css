@@ -530,6 +530,14 @@ background: gray;
     background-color: var(--avoseed);
 }
 
+#project_row { 
+    margin: auto;
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    background-color: white;
+}
+
 .project_row { 
     margin: auto;
     display: flex;
