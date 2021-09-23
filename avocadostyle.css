@@ -564,6 +564,26 @@ background: gray;
     padding:0;
 }
 
+/*===Up Load===*/
+#upload_section {
+    max-width: 100%;
+    padding: 5em 2em 2em 2em;
+    margin: 0 auto;
+}
+
+#formAjax {
+    
+    width:550px;
+    font-size: 1.2rem;
+    padding:1em;
+    margin: 1em auto;
+    border: 1px solid;
+    display:flex;
+    flex-direction: column;
+    background-color: var(--avoseed);
+}
+
+
 /*===Sign Up Form===*/
 #signup_container {
     max-width: 100%;

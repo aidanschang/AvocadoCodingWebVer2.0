@@ -14,19 +14,42 @@
 <body>
     <!-- Nav Bar-->
     <page-header></page-header>
-    
-    <p>Image uploader</p>
-    <form id="formAjax" action="uploadHandling.php" method="POST">
-        <input type="text" id="title" name="title" value="test"/><br /><br />
+    <section id="upload_section">
+        <h2>Show Case your Project!</h2>
+        <form id="formAjax" action="uploadHandling.php" method="POST">
+            <div>
+                <label for="title">Video Title:</label>
+                <input type="text" name="video_title" id="title" required>
+            </div>
 
-        <input type="file" id="fileAjax" name="fileAjax" /><br /><br />
-        <input type="submit" id="submit" name="submit" value="Upload" />
-    </form>
-    <p id="status"></p>
+            <div>
+                <label for="type">Project type:</label>
+                <select name="project_type" id="type" required>
+                    <option>Scratch</option>
+                    <option>Python</option>
+                    <option>Roblox</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="description">Video Description:</label>
+                <textarea id="description" name="video_description" rows="4" cols="60" maxlength="40" required></textarea>
+                
+            </div>
+            <div>
+                <input type="file" id="fileAjax" name="fileAjax" required/><br /><br />
+            </div>
+            
+            <div>
+                <input type="submit" id="submit" name="submit" value="Upload" />
+            </div>
+        </form>
+
+        <p id="status"></p>
+    </section>
 
     <!-- Footer-->
     <page-footer></page-footer>
-    
     <script type="text/javascript">
     var myForm = document.getElementById('formAjax');  // Our HTML form's ID
     var myFile = document.getElementById('fileAjax');  // Our HTML files' ID
@@ -42,7 +65,7 @@
 
         // Create a FormData object
         var formData = new FormData();
-
+        console.log(formData);
         // Select only the first file from the input array
         var file = files[0]; 
 
