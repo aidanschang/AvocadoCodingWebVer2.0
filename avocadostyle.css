@@ -564,6 +564,18 @@ background: gray;
     padding:0;
 }
 
+#to_upload_page_btn {
+    font-size: 1.2rem;
+    font-weight: bold;
+    width: 70%;
+    margin: 2em auto;
+    display: flex;
+    justify-content: center;
+    background-color: var(--avogreenL);
+    border: 1px solid;
+    text-decoration: none;
+    color: black;
+}
 /*===Up Load===*/
 #upload_section {
     max-width: 100%;
@@ -583,6 +595,16 @@ background: gray;
     background-color: var(--avoseed);
 }
 
+#upload_submit {
+    font-size: 1.2rem;
+    font-weight: bold;
+    width: 70%;
+    margin: 2em auto;
+    display: flex;
+    justify-content: center;
+    background-color: var(--avogreenL);
+    border: 1px solid;
+}
 
 /*===Sign Up Form===*/
 #signup_container {
