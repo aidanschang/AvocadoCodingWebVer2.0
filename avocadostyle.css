@@ -234,7 +234,7 @@ body {
     text-transform: uppercase; 
 }
 
-/*===== About_Hero =====*/
+/*===== About=====*/
 #index_container {
     height: 1800px;
 }
@@ -255,7 +255,7 @@ body {
 
 #quotation {
     margin-top:0;
-    font-size: 4.5rem;
+    font-size: 2.5rem;
     font-weight: 1000;
     color:white;
     text-shadow: 2px 2px 15px #26272a;
@@ -271,6 +271,7 @@ body {
 
 #hero_btn_container {
     margin-top: 2em;
+    display: flex;
 }
 
 .hero_btn_light {
@@ -292,45 +293,10 @@ body {
     font-weight: bold;
     margin: 1em;
 }
-@media screen and (min-width: 800px) {
-    #hero_container {
-        padding: 2em;
-        max-width: 75%;
-        height: 1000px;
-        margin: 0 auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position:relative;
-        background-image: url("IMG_4801.jpg");
-        background-position: center;
-        background-size:cover;
-    }
 
-    #index_hero_box {
-        padding: 10em;
-        height: 1000px;
-        background-image: url("IMG_4801.jpg");
-        background-position: center;
-        background-size:cover;
-    }
-    
-    .hero_btn {
-        text-decoration: none;
-        border: 2px solid;
-        color: white;
-        padding:1rem;
-        margin-right: 1em;
-        font-weight: bold;
-        box-shadow: 1px 1px 10px #7d8086;
-        background-color: var(--background);
-    }
-}
-
-/*===== About =====*/
 #about_container {
     background-color: var(--avogreen);
-    max-width: 70%;
+    max-width: 85%;
     position: absolute;
     top: 950px;
     left: 0;
@@ -348,7 +314,9 @@ body {
 }
 
 #about_pic {
-    width: 550px;
+    width: calc(100% + 5em);
+    display:flex;
+    margin: 0 auto;
 }
 
 #about_section h2 {
@@ -367,6 +335,77 @@ body {
     font-weight: bolder;
     display:block;
     margin: 0 auto;
+}
+
+@media screen and (min-width: 420px) {
+    #hero_container {
+        padding: 2em;
+        max-width: 75%;
+        height: 1000px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position:relative;
+        background-image: url("IMG_4801.jpg");
+        background-position: center;
+        background-size:cover;
+    }
+
+    #quotation {
+        margin-top:0;
+        font-size: 4rem;
+        font-weight: 1000;
+        color:white;
+        text-shadow: 2px 2px 15px #26272a;
+        text-transform: uppercase;
+    }
+
+    #about_pic {
+        width: 100%;
+        
+    }
+
+    #index_hero_box {
+        padding: 10em;
+        height: 1000px;
+        background-image: url("IMG_4801.jpg");
+        background-position: center;
+        background-size:cover;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    #hero_container {
+        padding: 2em;
+        max-width: 75%;
+        height: 1000px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position:relative;
+        background-image: url("IMG_4801.jpg");
+        background-position: center;
+        background-size:cover;
+    }
+
+    #quotation {
+        margin-top:0;
+        font-size: 4.5rem;
+        font-weight: 1000;
+        color:white;
+        text-shadow: 2px 2px 15px #26272a;
+        text-transform: uppercase;
+    }
+
+    #index_hero_box {
+        padding: 10em;
+        height: 1000px;
+        background-image: url("IMG_4801.jpg");
+        background-position: center;
+        background-size:cover;
+    }
 }
 
 /*===== Team =====*/
@@ -410,7 +449,8 @@ body {
 }
 
 #teachingteam_box {
-    margin-bottom: 2em;
+    width:90%;
+    margin:0 auto 2em;
     font-size: 1.5rem;
     display:flex;
     flex-wrap: wrap;
@@ -418,7 +458,7 @@ body {
 
 .teammember_profiles {
     background-color: var(--avoseed);
-    padding: 0 2em;
+    padding: 0 1em;
     margin: 1em auto;
     text-align: left;
     overflow: hidden;
@@ -440,15 +480,28 @@ body {
     float: right;
    
 }
+
+@media screen and (min-width: 420px) {
+    
+    
+}
+
+@media screen and (min-width: 800px) {
+    
+}
+
 /*===== Courses =====*/
 
 #courses_container {
     width: 100%;
-    padding-top: 10em;
-    
+    padding-top: 5em;
+    text-align: center;
+    margin: 0 auto;
 }
 
 #courses_container h1 {
+    display:flex;
+    margin:1em;
     text-align: center;
     font-size: 4rem;
     font-weight: bolder;
@@ -473,6 +526,33 @@ body {
     border: 1px gray;
     box-shadow: 0 0 5px gray;
 }
+
+@media screen and (min-width: 420px) {
+
+     #courses_container h1 {
+        color:blue;
+        
+        width: 100%;
+        margin:0 auto;
+       
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 800px) {
+
+    #courses_container h1 {
+        display:none;
+        color: red;
+        display:flex;
+        margin:1em;
+        text-align: center;
+        font-size: 4rem;
+        font-weight: bolder;
+        
+    }
+}
+
 
 /*===Projects===*/
 /* Scrollbar width */
@@ -525,7 +605,7 @@ background: gray;
     margin: 0 auto 0 auto;
     padding-left: 1em;
     border-bottom: 1px solid;
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: bold;
     background-color: var(--avoseed);
 }
@@ -576,6 +656,14 @@ background: gray;
     text-decoration: none;
     color: black;
 }
+
+@media screen and (min-width: 420px) {
+    
+}
+
+@media screen and (min-width: 800px) {
+    
+}
 /*===Up Load===*/
 #upload_section {
     max-width: 100%;
@@ -585,7 +673,7 @@ background: gray;
 
 #upload_section h1 {
     text-align: center;
-    font-size: 4rem;
+    font-size: 2.5rem;
     font-weight: bolder;
 }
 
@@ -596,7 +684,7 @@ background: gray;
 }
 
 #formAjax {
-    width:550px;
+    width:100%;
     font-size: 1.2rem;
     padding:1em;
     margin: 1em auto;
@@ -641,10 +729,17 @@ background: gray;
     border: 1px solid;
 }
 
+@media screen and (min-width: 420px) {
+    
+}
+
+@media screen and (min-width: 800px) {
+   
+}
 /*===Sign Up Form===*/
 #signup_container {
     max-width: 100%;
-    padding: 5em 2em 2em 2em;
+    padding: 5em 1em 2em;
     margin: 0 auto;
 }
 
@@ -666,7 +761,7 @@ background: gray;
 }
 
 .form_control {
-    width:550px;
+    width:95%;
     font-size: 1.2rem;
     padding:1em;
     margin: 1em auto;
@@ -750,7 +845,13 @@ background: gray;
     border: 1px solid;
 } 
 
+@media screen and (min-width: 420px) {
+    
+}
 
+@media screen and (min-width: 800px) {
+   
+}
 
 /*===error/success handling===*/
 .form-control.success input{
