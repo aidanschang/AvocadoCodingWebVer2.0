@@ -149,9 +149,14 @@ body {
 #nav-btn:hover {
     cursor: pointer;
 }
-@media screen and (min-width: 800px) {
 
-   
+@media screen and (max-width: 375px) {
+    #navbar__logo {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 800px) {
     .nav-toggle-label {
         display: none;
     }
@@ -159,11 +164,12 @@ body {
     #navbar_header {
         display: flex;
         justify-content: space-between;
-        
     }
+
     .logo {
         margin-left: 1em;
     }
+
     #menu_nav {
         all:unset;
         display:flex;
@@ -176,6 +182,7 @@ body {
         align-items: center;
         
     }
+
     #menu_nav li {
         margin-left: 15px;
         margin-bottom: 0;
@@ -309,17 +316,16 @@ body {
 }
 
 #about_box {
-    display: flex;
-    justify-content: center;
-    align-content: center;
     margin: 0 auto;
-    padding: 3em;
+    padding: 1em;
     flex-wrap: wrap;
 }
 
 #about_pic {
-    width: 350px;
-    margin: auto;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
 }
 
 #about_section h2 {
@@ -333,11 +339,28 @@ body {
     margin-bottom: 0.3em;
     color: var(--darkgreen);
 }
-#about_section button {
-    font-size: 1.3rem;
-    font-weight: bolder;
-    display:block;
-    margin: 0 auto;
+
+@media screen and (max-width: 375px) {
+    #index_container {
+        height: 1350px;
+    }
+    #hero_container {
+        height: 650px;
+    }
+
+    #quotation {
+        font-size: 2.5rem; 
+    }
+
+    #author {
+        font-size: 2rem; 
+    }
+
+    #about_container {
+    
+        top: 600px;
+      
+    }
 }
 
 @media screen and (min-width: 420px) {
@@ -347,6 +370,11 @@ body {
   
     #quotation {
         font-size: 3.7rem;
+    }
+
+    #about_pic {
+        width: 100%;
+        max-width: 550px;
     }
 }
 
@@ -437,6 +465,16 @@ body {
     height: 8em;
     margin: 0 1em 1em 0;
     float: right;
+}
+
+@media screen and (max-width: 375px) {
+    #team_hero_box {
+        padding: 2em;
+    }
+   
+    .teacher_photos {
+        height: 6em;
+    }
 }
 
 @media screen and (min-width: 420px) {
@@ -685,16 +723,20 @@ background: gray;
     border: 1px solid;
 }
 
-@media screen and (min-width: 420px) {
-    
+@media screen and (min-width: 600px) {
+    #formAjax {
+        max-width: 80%; 
+    }
 }
 
-@media screen and (min-width: 800px) {
-   
+@media screen and (min-width: 1000px) {
+    #formAjax {
+        max-width: 55%; 
+    }
 }
 /*===Sign Up Form===*/
 #signup_container {
-    max-width: 100%;
+    width: 100%;
     padding: 5em 1em 2em;
     margin: 0 auto;
 }
@@ -746,12 +788,10 @@ background: gray;
 } 
 
 #firstname, #student_firstname {
-  
     margin: 0.5em 0.5em 1.5em 0;
 }
 
 #lastname, #student_lastname {
-
     margin: 0.5em 0 1.5em 0.5em;
 }
 
@@ -801,8 +841,17 @@ background: gray;
     border: 1px solid;
 } 
 
-@media screen and (min-width: 420px) {
-    
+@media screen and (max-width: 350px) {
+    #signup_container h1 {
+        
+        margin: 1.25rem;   
+    }
+
+    #submit {
+        
+        margin: 1em;
+        
+    } 
 }
 
 @media screen and (min-width: 800px) {

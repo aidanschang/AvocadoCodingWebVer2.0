@@ -7,7 +7,7 @@ class pageFooter extends HTMLElement {
                     <li><a href="#about_container" class="menubar__links" id="about_page">Join Our Team</a></li>
                     <li><a href="teams.html" class="menubar__links" id="team_page">Contact</a></li>
                     <li><a href="courses.html" class="menubar__links" id="courses_page">courses</a></li>
-                    <li><a href="#projects" class="menubar__links" id="projects_page">projects</a></li>
+                    <li><a href="projects.html" class="menubar__links" id="projects_page">projects</a></li>
                 </ul>
             </nav>
         </footer>
