@@ -1,3 +1,4 @@
+// Creating page-header custom element
 class pageHeader extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
@@ -24,7 +25,7 @@ class pageHeader extends HTMLElement {
 }
 customElements.define('page-header', pageHeader);
 
-// Creating a class when hamburger is clicked
+// Creating a temporary class when hamburger menu is clicked
 const navSwitch = document.querySelector('.nav-toggle');
 const outsideClick = document.getElementById('index_container');
 

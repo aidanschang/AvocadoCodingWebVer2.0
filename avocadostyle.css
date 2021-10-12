@@ -63,8 +63,8 @@ body {
 }
 
 #menu_nav  li {
-    margin-bottom: 1em;
-    margin-right: 1em;
+    padding-bottom: 1em;
+    text-align: center;
 }
 
 #menu_nav  a {
@@ -77,6 +77,10 @@ body {
     transition: opacity 150ms ease-in-out;
 }
 
+.navbar__menu {
+    background-color: var(--avogreenL);
+    box-sizing: border-box;
+}
 #navbar_header a {
     text-decoration: none;
     color: var(--darkbrown);
@@ -196,13 +200,13 @@ when nav-toggle is clicked. See navbar.js for more details*/
 
     #menu_nav ul {
         display:flex;
-        align-items: center;
-        
+        align-items: center; 
     }
 
     #menu_nav li {
-        margin-left: 15px;
-        margin-bottom: 0;
+        margin-left: 15px; 
+        margin-bottom: 0em;
+        padding-bottom: 0em;
     }
 
     #menu_nav a {
@@ -226,8 +230,6 @@ when nav-toggle is clicked. See navbar.js for more details*/
     #menu_nav a:hover::before {
         transform: scale(1,1);
     }
-
-    
 }
 
 
@@ -235,35 +237,36 @@ when nav-toggle is clicked. See navbar.js for more details*/
 
 #avocado_coding_footer {
     width:100%;
-    padding-top: 50px;
-    background-color: white;
+    height:4em;
+    background-color: var(--avogreen);
+    padding: 1em;
+    
 }
 
 #footer_nav  ul {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     list-style: none;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 600px;
     
 }
 
-#footer_nav  li {
-    margin-bottom: 1em;
-    margin-right: 1em;
-    text-align: center;
-}
 
 #footer_nav a {
     text-decoration: none;
     color: var(--darkbrown);
     text-transform: uppercase; 
+    font-weight: bold;
+    font-size: 1rem;
 }
 
 /*===== About=====*/
 #index_container {
-    height: 1800px;
+    height: 1500px;
 }
 
 #index_hero_box {
@@ -412,7 +415,7 @@ when nav-toggle is clicked. See navbar.js for more details*/
 /*===== Team =====*/
 #team_hero_container {
     width:100%;
-    padding: 5em 1em;
+    padding: 5em 0em;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -596,8 +599,8 @@ background: gray;
 }
 
 #project_section {
-    
     padding-top: 10em;
+    height: 905px;
 }
 
 .project_videos {
