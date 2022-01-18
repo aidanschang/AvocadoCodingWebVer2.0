@@ -1,7 +1,7 @@
 # Avocado Coding Website
 
 ## Overview
-Avocado Coding Website was a project that devoted to a friend of mine who was seeking a website to further explain her online tutoring start-up. Although her start-up busienss was never launched, it was an excellent experience for me to build something specifically for others and collaborating with another person who specialized in back-end in an full stack project. Go [here](http://39.108.187.78:5814/static/home/teams.html) to view halted website.
+Avocado Coding Website was a project that devoted to a friend of mine who was seeking a website to further explain her online tutoring start-up. Although her start-up busienss was never launched, it was an excellent experience for me to build something specifically for others and collaborating with another person who specialized in back-end in an full stack project. Click [here](http://39.108.187.78:5814/static/home/index.html) to view the project.
 
 ## Features
 ### Responsive Layout
